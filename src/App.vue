@@ -1,12 +1,15 @@
 <template>
-  <h1>My First Vue App</h1>
+  <Header></Header>
+  <h1>Hi</h1>
 </template>
 
-<script>
+<script> 
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
+    Header
   }
 }
 
@@ -19,6 +22,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 </style>
