@@ -24,15 +24,13 @@ export default{
 
 <style>
 .header h1 {
-  color: white;
-  width: 150px; 
+  width: 200px; 
   padding-right: 80%;
-  font-size: 22px;
-
+  font-size: 27px;
 }
 
-
 .header {   
+  color: white; 
   font-weight: bold;
   overflow: hidden;  
   background: #222;
@@ -40,14 +38,10 @@ export default{
 }
 
 .header a {
-  color: white;
-  text-align: center;
   padding: 15px;
   font-size: 15px;
   line-height: 25px;
-  border-radius: 10px;
-
-  size: 25%;
+  border-radius: 25px;
 }
 
 .header a:hover {
@@ -59,8 +53,8 @@ export default{
 /* Float the link section to the right */
 .header-right {
   float: right;
-  padding-right: 40px;
   display: flex;
   gap: 20px;
+  padding: 5px 40px 5px 0px 
 }
 </style>
