@@ -1,4 +1,9 @@
 <template>
+<div class="smallheader">
+  <h1>Sam Key</h1>
+</div>
+
+
 <div class="header">
     <div class="menu">
         <a v-on:click="Home()">Home</a>
@@ -22,6 +27,14 @@ export default{
 </script>
 
 <style>
+.smallheader h1 {
+  font-size: 40px;
+}
+
+.smallheader {
+  height: 50px;
+}
+
 .header {   
   color: white; 
   font-weight: bold;

@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-    <h1>SAM KEY</h1>
     <Header></Header>
     <div class="content">
       <h1>Hi</h1>
@@ -11,6 +10,7 @@
 <script> 
 import Header from './components/Header.vue'
 
+document.title = "Sam Key's Resume"
 export default {
   name: 'App',
   components: {
