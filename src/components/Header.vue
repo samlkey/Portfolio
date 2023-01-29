@@ -1,17 +1,16 @@
 <template>
 <div class="header">
-    <h1>SAM KEY</h1>
-    <div class="header-right">
+    <div class="menu">
         <a v-on:click="Home()">Home</a>
-        <a v-on:click="Home()">ETC</a>
-
-
+        <a v-on:click="Home()">Projects</a>
+        <a v-on:click="Home()">Qualifications</a>
+        <a v-on:click="Home()">Experience</a>
+        <a v-on:click="Home()">Contact</a>
     </div>
 </div>
 </template>
 
 <script>
-
 export default{
     name: 'Header',
     methods : {
@@ -23,25 +22,18 @@ export default{
 </script>
 
 <style>
-.header h1 {
-  width: 200px; 
-  padding-right: 80%;
-  font-size: 27px;
-}
-
 .header {   
   color: white; 
   font-weight: bold;
   overflow: hidden;  
   background: #222;
   display: flex;
+  height: 35px;
 }
 
 .header a {
-  padding: 15px;
+  padding: 8px;
   font-size: 15px;
-  line-height: 25px;
-  border-radius: 25px;
 }
 
 .header a:hover {
@@ -50,11 +42,9 @@ export default{
   cursor: pointer;
 }
 
-/* Float the link section to the right */
-.header-right {
+.menu {
   float: right;
   display: flex;
-  gap: 20px;
-  padding: 5px 40px 5px 0px 
+  gap: 3%;
 }
 </style>
