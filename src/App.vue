@@ -2,20 +2,22 @@
   <div class="main">
     <Header></Header>
     <div class="content">
-      <h1>Hi</h1>
+      <Home></Home>
     </div>
   </div>
 </template>
 
 <script> 
 import Header from './components/Header.vue'
+import Home from './components/Home.vue';
 
 document.title = "Sam Key's Resume"
 export default {
   name: 'App',
   components: {
-    Header
-  }
+    Header,
+    Home
+}
 }
 </script>
 
@@ -26,7 +28,7 @@ export default {
   border-width: 0 1px 1px;
   position: relative;
   border-color: #e5e5e5; /* USE #e5e5e5; */
-  display: flex;
+  /* display: flex; */
 }
 
 #app {
