@@ -213,7 +213,8 @@ export default{
 
 
 .menu1 {
-    margin-left: 23%;
+    align-items: center;
+    justify-content: center;
     display: flex;
     gap: 15px;
     font-size: 15px;
@@ -226,13 +227,10 @@ export default{
   cursor: pointer;
 }
 
-
-
 .skills{
     margin-left: 25px;
     margin-top: 30px;
 }
-
 
 .right-of-image h1 {
     font-size: 25px;
