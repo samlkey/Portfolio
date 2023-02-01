@@ -233,7 +233,7 @@ export default{
 }
 
 .right-of-image h1 {
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 15px;
     padding-top: 25px;
 }
