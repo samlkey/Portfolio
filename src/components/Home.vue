@@ -31,8 +31,88 @@
     </div>
 
     <div class="choice-wrapper">
-        <div id="1" style="display:none;">1</div>
-        <div id="2" style="display:none;">2</div>
+        <div id="1" style="display:none;">
+            <ul>
+                <li>Fluent in Object-Orientated programming and development, especially in the following languages:</li>
+                <ul>
+                    <li>Java, C++, C#, JavaScript, Python, C</li>
+                </ul>
+                <li>Fluent with Event-Driven programming techniques and languages</li>
+                <li>Excellent at web-development techniques and languages such as:</li>
+                <ul>
+                    <li>HTML, CSS, JavaScript, ES6, PHP</li>
+                </ul>
+                <li>Fluent with several different Functional-Orientated programming methods and languages, such as:</li>
+                <ul>
+                    <li>Clojure, F#</li>
+                </ul>
+                <li>
+                    Knowledgeable with modern software development frameworks such as:
+                </li>
+                <ul>
+                    <li>Vue.js, React, Electron, Express.js, .NET</li>
+                </ul>
+                <li>
+                    Fluent in many pieces of popular computer software including:
+                </li>
+                <ul>
+                    <li>Microsoft Office Suite, FileZilla, WinSCP, Audacity, Git, Unity, etc.</li>
+                </ul>
+                <li>
+                    Knowledge and experience of Linux based operating systems such as:
+                </li>
+                <ul>
+                    Ubuntu-Server, Debian, Arch, etc.
+                </ul>
+                <li>
+                    Experience with several relational & non-relational database solutions such as:
+                </li>
+                <ul>
+                    <li>Microsoft SQL Server, MongoDB, Oracle Database</li>
+                </ul>
+                <li>
+                    Great research ability, able to efficiently filter between useful and irrelevant information
+                </li>
+                <li>
+                    Excellent IT trouble-shooting skills
+                </li>
+                <li>
+                    Familiar with working within a terminal, be that Windows or Linux
+                </li>
+                <li>
+                    Great graphic editing and rendering skills utilizing software such as:
+                </li>
+                <ul>
+                    <li>Paint.NET, Photoshop, Adobe Illustrator</li>
+                </ul>
+            </ul>
+        </div>
+        <div id="2" style="display:none;">
+        <ul>
+            <li>
+                Passion for servers and networking, leading to running my own Ubuntu-based home server with the following features:
+            </li>
+            <ul>
+                <li>
+                    Built-in IPTABLES, advance security system, VPN, networking filtering/monitoring with PiHole.
+                </li>
+            </ul>
+            <li>
+                Experience with back-end networking applications such as Node.js
+            </li>
+            <li>
+                Knowledge and experience using different networking hardware present in modern company networks I.e:
+            </li>
+            <ul>
+                <li>
+                    Switches, firewalls, etc.
+                </li>
+            </ul>
+        </ul>
+        
+        
+        
+        </div>
         <div id="3" style="display:none;">3</div>
         <div id="4" style="display:none;">4</div>
         <div id="5" style="display:none;">5</div>
@@ -75,6 +155,17 @@ export default{
 
 
 <style>
+.choice-wrapper {
+    font-size: 15px; 
+    text-align: left;
+    margin-top: 35px;
+}
+
+.choice-wrapper li {
+    margin: 5px 0;
+}
+
+
 .menu1 {
     margin-left: 23%;
     display: flex;
