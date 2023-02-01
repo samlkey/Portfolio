@@ -39,7 +39,7 @@ export default{
   color: white; 
   font-weight: bold;
   overflow: hidden;  
-  background: #222;
+  background: #181818;
   display: flex;
   height: 35px;
 }

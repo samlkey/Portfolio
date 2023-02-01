@@ -109,13 +109,59 @@
                 </li>
             </ul>
         </ul>
-        
-        
-        
         </div>
-        <div id="3" style="display:none;">3</div>
-        <div id="4" style="display:none;">4</div>
-        <div id="5" style="display:none;">5</div>
+        <div id="3" style="display:none;">
+        <ul>
+            <li>
+                Experience with microcontrollers such as the Raspberry Pi & Arduino
+            </li> 
+            <li>
+                Proficient at trouble-shooting PC hardware issues
+            </li>
+            <li>
+                Strong fascination with computer construction leading to:
+            </li>
+            <ul>
+                <li>
+                    Constructing many different PCs for different people
+                </li>
+                <li>
+                    Creating quotes for several different PC builds
+                </li>
+            </ul>
+        </ul>      
+        </div>
+        <div id="4" style="display:none;">
+        <ul>
+            <li>
+                Excellent communication skills derived from years of operating within a team
+            </li>
+            <li>
+                Confident when team-speaking and managing a team, able to get a everyone striving for the same goal
+            </li>
+            <li>
+                Extremely self-motivated, with a passion to continuously learn and improve
+            </li>
+            <li>
+                Strong technical problem-solving abilities from years of computer programming and developing
+            </li>
+        </ul>
+        </div>
+        <div id="5" style="display:none;">
+            <ul>
+                <li>
+                    Music has always been a strong passion, as a result I have obtained and continue to practice the following skills:
+                </li>
+                <ul>
+                    <li>
+                        Drumming (Obtaining RSL qualifications)
+                    </li>
+                    <li>
+                        Ability to play the Guitar
+                    </li>
+                </ul>
+            </ul>
+        </div>
     </div>
 
     </div>

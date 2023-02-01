@@ -5,9 +5,11 @@
       <Home></Home>
     </div>
   </div>
+  <Footer></Footer>
 </template>
 
 <script> 
+import Footer from './components/Footer.vue';
 import Header from './components/Header.vue'
 import Home from './components/Home.vue';
 
@@ -16,7 +18,8 @@ export default {
   name: 'App',
   components: {
     Header,
-    Home
+    Home,
+    Footer
 }
 }
 </script>
