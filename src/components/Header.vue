@@ -10,7 +10,7 @@
         <a v-on:click="Home()">Projects</a>
         <a v-on:click="Home()">Qualifications</a>
         <a v-on:click="Home()">Experience</a>
-        <a v-on:click="Home()">Contact</a>
+        <a v-on:click="Contact()">Contact</a>
     </div>
 </div>
 </template>
@@ -20,7 +20,10 @@ export default{
     name: 'Header',
     methods : {
         Home: function(){
-            alert("Home!")
+          this.$router.push('/')
+        },
+        Contact : function(){
+          this.$router.push('/contact')
         }
     }
 }

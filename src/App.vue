@@ -2,7 +2,7 @@
   <div class="main">
     <Header></Header>
     <div class="content">
-      <router-view></router-view>
+      <router-view />
     </div>
   </div>
   <Footer></Footer>
@@ -50,4 +50,5 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 </style>
