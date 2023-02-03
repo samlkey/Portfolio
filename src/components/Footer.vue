@@ -11,6 +11,7 @@
         <div class="bottom-tag">
             <p>Sam Key</p>
             <p>samkey726@gmail.com</p>
+            <a href="/contact">Contact Me!</a>
         </div>
         
     </div>
@@ -43,11 +44,16 @@
 
 
 .bottom-tag{
-    padding-top: 220px;
+    padding-top: 105px;
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
     justify-content: center;
+    padding-left: 20px;
+}
+
+.bottom-tag a {
+    color: white;
 }
 
 

@@ -201,10 +201,12 @@ export default{
 
 
 <style>
+
 .choice-wrapper {
     font-size: 15px; 
     text-align: left;
     margin-top: 35px;
+    margin-bottom: 80px;
 }
 
 .choice-wrapper li {

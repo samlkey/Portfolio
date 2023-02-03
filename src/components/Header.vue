@@ -7,24 +7,34 @@
 <div class="header">
     <div class="menu">
         <a v-on:click="Home()">Home</a>
-        <a v-on:click="Home()">Projects</a>
-        <a v-on:click="Home()">Qualifications</a>
-        <a v-on:click="Home()">Experience</a>
+        <a v-on:click="Projects()">Projects</a>
+        <a v-on:click="Qualifications()">Qualifications</a>
+        <a v-on:click="Experience()">Experience</a>
         <a v-on:click="Contact()">Contact</a>
     </div>
 </div>
 </template>
 
 <script>
+
 export default{
     name: 'Header',
     methods : {
         Home: function(){
           this.$router.push('/')
         },
+        Projects: function(){
+          alert("not yet implemented")
+        },
+        Qualifications: function(){
+          alert("not yet implemented")
+        },
+        Experience: function(){
+          this.$router.push('/experience')
+        },
         Contact : function(){
           this.$router.push('/contact')
-        }
+        },
     }
 }
 </script>
