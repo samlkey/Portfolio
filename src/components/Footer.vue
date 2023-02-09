@@ -8,10 +8,14 @@
                 <img class="icon" src="../images/linkedin.png">
             </a>
     </div>
+
+
+    
         <div class="bottom-tag">
-            <p>Sam Key</p>
-            <p>samkey726@gmail.com</p>
-            <a href="/contact">Contact Me!</a>
+            <p class="text">Sam Key</p>
+            <p class="text">samkey726@gmail.com</p>
+            <p class="text"><a href="/contact">Contact Me!</a></p>
+            <p class="text">Made using Vue.js</p>
         </div>
         
     </div>
@@ -23,6 +27,16 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
+}
+
+
+.text + .text{
+    border-left: 2px solid black;
+}
+
+.text {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -38,30 +52,34 @@
 }
 
 
-.bottom-tag p {
-    align-self: center;
+
+
+.bottom-tag {
+    display: flex;
+    justify-content: center;
+    padding-top: 105px;
+
 }
 
-
-.bottom-tag{
+/* .bottom-tag{
     padding-top: 105px;
     display: flex;
     gap: 25px;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
-}
+    
+} */
 
 .bottom-tag a {
     color: white;
 }
 
+* { box-sizing: border-box; }
 
 .footer {
     background-color: #181818;
     margin-top: -13px;
-    height: 100%;
     color: white;
-    text-align: center;
 }
 </style>

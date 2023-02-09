@@ -1,6 +1,8 @@
 <template>
-    <h1> Consider Taking a Copy of my CV</h1>
-    <a href="../files/CV.pdf" target="_blank" download>Yesyes</a>
+
+    <h1 class="title">Contact Me!</h1>
+    <!-- <h1> Consider Taking a Copy of my CV</h1>
+    <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
     <div class="contact">
         <h1>Get in Touch</h1>
         <p>
@@ -47,7 +49,7 @@
 }
 
 .contact h1 {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .submit {

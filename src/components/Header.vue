@@ -7,7 +7,7 @@
 <div class="header">
     <div class="menu">
         <a v-on:click="Home()">Home</a>
-        <a v-on:click="Projects()">Projects</a>
+        <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Qualifications()">Qualifications</a>
         <a v-on:click="Experience()">Experience</a>
         <a v-on:click="Contact()">Contact</a>
@@ -27,7 +27,7 @@ export default{
           alert("not yet implemented")
         },
         Qualifications: function(){
-          alert("not yet implemented")
+          this.$router.push('/qualifications')
         },
         Experience: function(){
           this.$router.push('/experience')

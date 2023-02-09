@@ -1,0 +1,109 @@
+<template>
+    <h1 class="title">Qualifications</h1>
+    <div class="content-wrap">
+        <h1>Sheffield Hallam University: Sept 2021 - Present</h1>
+        <div class="qual">
+            <p>MSc Cyber Security</p>
+            <p class="mark" id="mark1">2.1 (est)</p>
+        </div>
+
+        <h1>Sheffield Hallam University: Sept 2018 - June 2021</h1>
+        <div class="qual">
+            <p>BSc Honours Computer Science</p>
+            <p class="mark" id="mark2">2.2</p>
+        </div>
+
+        <h1>John Leggott College: Sept 2016 - June 2018</h1>
+        <div class="qual">
+            <p>IT Extended Diploma</p>
+            <p class="mark" id="mark3">D*D*D*</p>
+        </div>
+
+        <div class="qual">
+            <p>IT Diploma</p>
+            <p class="mark" id="mark4">D*</p>
+        </div>
+        
+        <div class="qual">
+            <p>A-Level Use of Mathematics</p>
+            <p class="mark" id="mark5">C</p>
+        </div>
+
+        <h1>Additional Qualifications</h1>
+        <div class="qual">
+            <p>RSL Grade 4 Drum Performance</p>
+                <p class="mark" id="mark6">M</p>
+        </div>
+
+        <div class="qual">
+            <p>RSL Grade 3 Drum Performance</p>
+                <p class="mark" id="mark7">M</p>
+        </div>
+    </div>
+</template>
+
+<style>
+/* padding for marks, must be a better way to do this! */
+
+#mark7{
+    padding-left: 220px;
+}
+
+#mark6 {
+    padding-left: 220px;
+}
+
+#mark5 {
+    padding-left: 252px;
+}
+
+#mark4 {
+    padding-left: 380px;
+}
+
+#mark3 {
+    padding-left: 283px;
+}
+
+#mark2 {
+    padding-left: 217px;
+}
+
+#mark1 {
+    padding-left: 290px;
+}
+
+
+
+
+.qual {
+    display: flex;
+    gap: 200px;
+    background: #E8E8E8;
+    margin-left: 50px;
+    width: 90%;
+}
+
+
+.qual p {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.mark {
+    font-weight: bold;
+}
+
+
+.content-wrap h1 {
+    font-size: 20px; 
+    padding-top: 20px;
+    margin-left: 3%;
+    font-style: italic;
+}
+
+.content-wrap {
+    margin-bottom: 30%;
+}
+
+</style>

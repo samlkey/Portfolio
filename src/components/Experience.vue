@@ -83,10 +83,11 @@
 }
 
 .title {
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-top: 45px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-top: 30px;
     font-size: 25px;
+    text-decoration: underline;
 }
 
 .exp h1 {
