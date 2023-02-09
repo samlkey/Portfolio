@@ -31,7 +31,7 @@
 
 
 .text + .text{
-    border-left: 2px solid black;
+    border-left: 1px solid white;
 }
 
 .text {

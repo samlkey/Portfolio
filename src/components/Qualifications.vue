@@ -84,15 +84,15 @@
     width: 90%;
 }
 
+.mark {
+    font-weight: bold;
+}
 
 .qual p {
     font-size: 15px;
     padding-left: 20px;
 }
 
-.mark {
-    font-weight: bold;
-}
 
 
 .content-wrap h1 {
