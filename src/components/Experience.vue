@@ -93,6 +93,8 @@
 .exp h1 {
     font-size: 23px; 
     padding-top: 20px;
+    font-style: italic;
+   
 }
 
 .exp h2 {

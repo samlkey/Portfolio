@@ -206,7 +206,7 @@ export default{
     font-size: 15px; 
     text-align: left;
     margin-top: 35px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .choice-wrapper li {
@@ -232,6 +232,10 @@ export default{
 .skills{
     margin-left: 25px;
     margin-top: 30px;
+}
+
+.skills h1 {
+    text-decoration: underline;
 }
 
 .right-of-image h1 {

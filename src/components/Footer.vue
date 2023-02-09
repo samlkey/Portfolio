@@ -41,10 +41,10 @@
 
 
 .icon {
-    height: 55px;
-    width: 55px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .wrapper img:hover {
@@ -57,7 +57,10 @@
 .bottom-tag {
     display: flex;
     justify-content: center;
-    padding-top: 105px;
+    padding-top: 15px;
+
+    /* align to center */
+    padding-right: 12px;
 
 }
 
@@ -81,5 +84,9 @@
     background-color: #181818;
     margin-top: -13px;
     color: white;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    
 }
 </style>

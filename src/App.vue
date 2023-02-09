@@ -28,7 +28,9 @@ export default {
   border-width: 0 1px 1px;
   position: relative;
   border-color: #e5e5e5; /* USE #e5e5e5; */
-  /* display: flex; */
+  min-height: 100vh;
+  
+
 }
 #app {
   font-family: Verdana,Arial;
@@ -37,6 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
 .main {
   margin-bottom: 0;
@@ -45,10 +48,13 @@ export default {
   position: relative;
   text-align: left;
   width: 1060px;
+  
+
 }
 html, body {
   margin: 0;
   padding: 0;
+
 }
 
 </style>
