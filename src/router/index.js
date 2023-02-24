@@ -5,6 +5,7 @@ import Experience from '../components/Experience.vue'
 import Qualifications from '../components/Qualifications.vue'
 
 
+
 const routes = [
   {
     path: '/',

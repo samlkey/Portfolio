@@ -9,7 +9,7 @@
         It would be a pleasure if you could consider me for any upcoming opportunities. For inquires please contact me below. I am looking forward to hearing from you!
         </p>
 
-        <form action="/action_page.php">
+        <form @submit="submit">
             <input type="email" id="email" name="email" size="45" maxlength="35" placeholder="Email"><br><br>
             <input type="text" id="name" name="name" size="45" maxlength="40" placeholder="Name"><br><br>
             <textarea rows="10" cols="40" placeholder="Message" maxlength="500"></textarea><br><br>
@@ -18,6 +18,37 @@
 
     </div>
 </template>
+
+<script>
+import axios from 'axios'
+
+
+export default{
+   
+
+    name: 'Contact',
+
+    methods : {
+        submit(e) {
+            e.preventDefault();
+            console.log("working!")
+
+            const headers = {
+                'Access-Control-Allow-Origin' : '*'
+            }
+
+
+            axios.post("http://127.0.0.1:8000/Submit.php", "hi", {
+                headers: headers
+            })
+        }
+    }
+}
+
+
+</script>
+
+
 
 <style>
 .contact {
