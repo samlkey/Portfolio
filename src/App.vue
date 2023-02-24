@@ -29,7 +29,7 @@ export default {
   position: relative;
   border-color: #e5e5e5; /* USE #e5e5e5; */
   min-height: 100vh;
-  
+  font-family: century;
 
 }
 #app {

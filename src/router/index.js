@@ -4,6 +4,7 @@ import Contact from '../components/Contact.vue'
 import Experience from '../components/Experience.vue'
 import Qualifications from '../components/Qualifications.vue'
 
+
 const routes = [
   {
     path: '/',
@@ -25,7 +26,8 @@ const routes = [
     path: "/qualifications",
     name: 'qualifications',
     component: Qualifications
-  }
+  },
+
   //{
     //path: '/about',
     //name: 'about',
