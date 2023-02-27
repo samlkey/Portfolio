@@ -3,6 +3,7 @@ import Home from '../components/Home.vue'
 import Contact from '../components/Contact.vue'
 import Experience from '../components/Experience.vue'
 import Qualifications from '../components/Qualifications.vue'
+import Projects from '../components/Projects.vue'
 
 
 
@@ -28,6 +29,11 @@ const routes = [
     name: 'qualifications',
     component: Qualifications
   },
+  {
+    path: "/projects",
+    name: 'projects',
+    component: Projects
+  }
 
   //{
     //path: '/about',

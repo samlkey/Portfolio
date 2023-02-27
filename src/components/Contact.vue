@@ -1,8 +1,38 @@
 <template>
+    <head>
+        <meta charset="UTF-8">
+    </head>
 
     <h1 class="title">Contact Me!</h1>
     <!-- <h1> Consider Taking a Copy of my CV</h1>
     <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
+    <div class="details">
+        <!--Implement Icons-->
+        <div class="pair">
+            <img class="linked" src="../images/phone.png">
+            <p>07944994022</p>
+        </div>
+
+        <div class="pair">
+            <img class="linked" src="../images/email.jpg">
+            <p>samkey726@gmail.com</p>
+        </div>
+
+        <div class="pair">
+            <img class="linked" src="../images/linkedin.png">
+            <p>samkey726</p>
+        </div>
+
+        <div class="pair">
+            <img class="linked" src="../images/git.png">
+            <p>samlkey</p>
+        </div>
+
+       
+      
+
+
+    </div>
     <div class="contact">
         <h1>Get in Touch</h1>
         <p>
@@ -10,8 +40,8 @@
         </p>
 
         <form @submit="submit">
-            <input type="email" id="email" name="email" size="45" maxlength="35" placeholder="Email"><br><br>
-            <input type="text" id="name" name="name" size="45" maxlength="40" placeholder="Name"><br><br>
+            <input type="email" id="email" name="email" size="45" maxlength="35" placeholder="Your Email"><br><br>
+            <input type="text" id="name" name="name" size="45" maxlength="40" placeholder="Subject"><br><br>
             <textarea rows="10" cols="40" placeholder="Message" maxlength="500"></textarea><br><br>
             <input type="submit" class="submit" value="Submit">
         </form> 
@@ -51,6 +81,35 @@ export default{
 
 
 <style>
+
+
+.linked {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+}
+
+
+.pair{
+    display: flex; 
+    /* justify-content: center; */
+    padding-left: 70px;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+
+.details {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.details p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .contact {
     margin-top: 80px;
     text-align: center;

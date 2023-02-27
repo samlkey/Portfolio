@@ -10,6 +10,7 @@
         <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Qualifications()">Qualifications</a>
         <a v-on:click="Experience()">Experience</a>
+        <a v-on:click="Projects()">Projects</a>
         <a v-on:click="Contact()">Contact</a>
     </div>
 </div>
@@ -23,9 +24,6 @@ export default{
         Home: function(){
           this.$router.push('/')
         },
-        Projects: function(){
-          alert("not yet implemented")
-        },
         Qualifications: function(){
           this.$router.push('/qualifications')
         },
@@ -35,6 +33,9 @@ export default{
         Contact : function(){
           this.$router.push('/contact')
         },
+        Projects : function(){
+          this.$router.push('/projects')
+        }
     }
 }
 </script>
