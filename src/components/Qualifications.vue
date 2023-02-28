@@ -1,5 +1,4 @@
 <template>
-    <h1 class="title">Qualifications</h1>
     <div class="content-wrap">
         <h1>Sheffield Hallam University: Sept 2021 - Present</h1>
         <div class="qual">

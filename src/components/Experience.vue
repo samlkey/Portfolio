@@ -1,5 +1,4 @@
 <template>
-    <h1 class="title">Work Experience</h1>
     <div class="exp">
         <h1>Clarks, August 2022 - Febuary 2023</h1>
         <ul>

@@ -2,8 +2,6 @@
     <head>
         <meta charset="UTF-8">
     </head>
-
-    <h1 class="title">Contact Me!</h1>
     <!-- <h1> Consider Taking a Copy of my CV</h1>
     <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
     <div class="details">

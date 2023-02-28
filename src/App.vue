@@ -30,7 +30,7 @@ export default {
   border-color: #e5e5e5; /* USE #e5e5e5; */
   min-height: 100vh;
   font-family: century;
-
+  margin-top: 45px
 }
 #app {
   font-family: Verdana,Arial;
