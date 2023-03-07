@@ -6,24 +6,38 @@
     <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
     <div class="details">
         <!--Implement Icons-->
+
+
         <div class="pair">
-            <img class="linked" src="../images/phone.png">
-            <p>07944994022</p>
+
+            <a href="mailto: samkey726@gmail.com" class="linked">
+                <img class="icon" src="../images/email.jpg">
+            </a>
+
+
         </div>
 
         <div class="pair">
-            <img class="linked" src="../images/email.jpg">
-            <p>samkey726@gmail.com</p>
+            <a class="linked" target="_blank" href="https://www.linkedin.com/in/samkey726/">
+                <img class="icon" src="../images/linkedin.png">
+            </a>
+    
         </div>
 
         <div class="pair">
-            <img class="linked" src="../images/linkedin.png">
-            <p>samkey726</p>
+            <a class="linked" target="_blank" href="https://github.com/samlkey">
+                <img class="icon" src="../images/github.png">
+            </a>
         </div>
 
         <div class="pair">
-            <img class="linked" src="../images/git.png">
-            <p>samlkey</p>
+        
+      
+
+
+            <a class="linked" onclick='navigator.clipboard.writeText("07944994022")'>
+                <img class="icon" src="../images/phone.png">
+            </a>
         </div>
 
        
@@ -31,6 +45,7 @@
 
 
     </div>
+
     <div class="contact">
         <h1>Get in Touch</h1>
         <p>
@@ -45,6 +60,8 @@
         </form> 
 
     </div>
+
+   
 </template>
 
 <script>
@@ -69,6 +86,16 @@ export default{
             axios.post("http://127.0.0.1:8000/Submit.php", "hi", {
                 headers: headers
             })
+        },
+
+
+        //could escilate to main copy to clipboard function widely used
+        t: function() {
+            console.log("hi")
+            
+            navigator.clipboard.writeText('07')
+          
+
         }
     }
 }
@@ -85,6 +112,11 @@ export default{
     height: 30px;
     width: 30px;
     margin-top: 10px;
+    
+}
+
+.linked :hover {
+    cursor: pointer;
 }
 
 
@@ -101,6 +133,8 @@ export default{
 .details {
     text-align: center;
     padding-top: 15px;
+    display: flex; 
+    margin-left: 30px;
 }
 
 .details p {

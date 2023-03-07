@@ -7,7 +7,6 @@
 <div class="header">
     <div id="m" class="menu">
         <a v-on:click="Home()">Home</a>
-        <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Qualifications()">Qualifications</a>
         <a v-on:click="Experience()">Experience</a>
         <a v-on:click="Projects()">Projects</a>
@@ -25,6 +24,7 @@ export default{
         headerArr: null
       }
     },
+    //sort this out
     methods : {
         Home: function(){
           this.flushSel(); 
