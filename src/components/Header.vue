@@ -18,7 +18,6 @@
         <!-- <a class="resum" v-on:click="openCV()">Resume</a> -->
 
         <button href="/files/CV.pdf" download>CV</button>
-        <pdf src="../../public/files/CV.pdf"></pdf>
     </div>
 </div>
 </template>
@@ -40,15 +39,14 @@ export default{
     methods : {
         Qualifications: function(){
           this.flushSel();
-          document.getElementById('quals').scrollIntoView();
-          this.$router.push('/qualifications')
+          document.getElementById('qualScroll').scrollIntoView();
+    
           // this.headerArr[1].style.backgroundColor = '#ddd'
           // this.headerArr[1].style.color = 'black'
         },
         Experience: function(){
-          document.getElementById('exp').scrollIntoView();
-          this.flushSel();
-          this.$router.push('/experience')
+          document.getElementById('expScroll').scrollIntoView();
+
           // this.headerArr[2].style.backgroundColor = '#ddd'
           // this.headerArr[2].style.color = 'black'
         },

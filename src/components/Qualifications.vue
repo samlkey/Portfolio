@@ -1,5 +1,14 @@
 <template>
+
+    <div class="qualTitle">
+            <h1 style="color: #808080">01.</h1>
+            <h1>Qualifications</h1>
+    </div>
+    
+    
     <div id="quals" class="content-wrap">
+       
+        
         <h1>Sheffield Hallam University: Sept 2021 - Present</h1>
         <div class="qual">
             <p>MSc Cyber Security</p>
@@ -42,8 +51,19 @@
 </template>
 
 <style>
-/* padding for marks, must be a better way to do this! */
+.qualTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 30px;
+}
 
+
+
+
+
+/* padding for marks, must be a better way to do this! */
 #mark7{
     padding-left: 220px;
 }
@@ -73,8 +93,6 @@
 }
 
 
-
-
 .qual {
     display: flex;
     gap: 200px;
@@ -101,7 +119,8 @@
 }
 
 .content-wrap {
-    margin-bottom: 30%;
+    margin-bottom: 10%;
+    margin-left: 250px;
 }
 
 </style>

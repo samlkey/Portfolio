@@ -3,8 +3,12 @@
     <Header></Header>
     <div class="content">
       <Home></Home>
+      <div id="qualScroll">
       <Qualifications></Qualifications>
+      </div>
+      <div id="expScroll">
       <Experience></Experience>
+      </div>
       <Contact></Contact>
     </div>
   </div>
@@ -38,6 +42,15 @@ export default {
 </script>
 
 <style>
+#qualScroll{
+  padding-top: 130px;
+}
+
+#expScroll{
+  padding-top: 130px;
+}
+
+
 .content {
   position: relative;
   min-height: 100vh;
