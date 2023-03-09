@@ -15,19 +15,26 @@
         <a v-on:click="Experience()">Experience</a>
         <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Contact()">Contact</a>
-        <a v-on:click="openCV()">Resume</a>
+        <!-- <a class="resum" v-on:click="openCV()">Resume</a> -->
+
+        <button href="/files/CV.pdf" download>CV</button>
+        <pdf src="../../public/files/CV.pdf"></pdf>
     </div>
 </div>
 </template>
 
 <script>
+// import pdf from 'vue-pdf'
 
 export default{
     name: 'Header',
     data(){
-      return {
+      return { 
         headerArr: null
       }
+    },
+    components: {
+      // pdf
     },
     //sort this out
     methods : {
@@ -65,7 +72,7 @@ export default{
           // }
         },
         openCV : function(){
-
+            window.open('../files/CV.pdf')
         }
     },
     mounted(){
@@ -96,6 +103,22 @@ export default{
  
 }
 
+.menu button {
+  text-decoration: none;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  width: 200px;
+  font-weight: bold;
+  background: #181818;
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+
+}
+
+.menu button :hover {
+  cursor: pointer;
+}
 
 /* .smallheader h1 {
   font-size: 70px;
@@ -124,6 +147,13 @@ export default{
   box-shadow: 0 10px 20px -10px black;
 
 
+}
+
+.resum {
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  margin-top: -10px;
 }
 
 .header a {
