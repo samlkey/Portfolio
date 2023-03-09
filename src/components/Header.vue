@@ -118,8 +118,10 @@ export default{
   z-index: 99;
   background: #181818;
   width: 100%;
-  height: 80px
+  height: 80px;
   
+
+  box-shadow: 0 10px 20px -10px black;
 
 
 }
