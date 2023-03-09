@@ -258,7 +258,7 @@ export default{
 
 .wrapper {
     display: flex;
-    margin-top: 15px;
+    margin-top: 200px;
 }
 
 .p2 {

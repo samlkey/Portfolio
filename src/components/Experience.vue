@@ -1,5 +1,5 @@
 <template>
-    <div class="exp">
+    <div id="exp" class="exp">
         <h1>Clarks, August 2022 - Febuary 2023</h1>
         <ul>
          

@@ -1,8 +1,11 @@
 <template>
-  <div class="main">
+  <div id="content" class="main">
     <Header></Header>
     <div class="content">
-      <router-view />
+      <Home></Home>
+      <Qualifications></Qualifications>
+      <Experience></Experience>
+      <Contact></Contact>
     </div>
   </div>
   <Footer></Footer>
@@ -10,13 +13,26 @@
 
 <script> 
 import Footer from './components/Footer.vue';
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import Home from './components/Home.vue'
+import Qualifications from './components/Qualifications.vue';
+import Experience from './components/Experience.vue';
+import Contact from './components/Contact.vue';
+
+
+
+
+
 document.title = "Sam Key's Resume"
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    Home,
+    Qualifications,
+    Experience,
+    Contact
 }
 }
 </script>
@@ -55,7 +71,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: #181818;
-
+  scroll-behavior: smooth;
 }
 
 </style>

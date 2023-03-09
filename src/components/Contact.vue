@@ -4,7 +4,7 @@
     </head>
     <!-- <h1> Consider Taking a Copy of my CV</h1>
     <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
-    <div class="details">
+    <div id="deets" class="details">
         <!--Implement Icons-->
 
 

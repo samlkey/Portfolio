@@ -10,10 +10,10 @@
     </a>
   </div>
     <div id="m" class="menu">
-        <a v-on:click="Home()">Home</a>
+        <a href="#">Home</a>
         <a v-on:click="Qualifications()">Qualifications</a>
         <a v-on:click="Experience()">Experience</a>
-        <a v-on:click="Projects()">Projects</a>
+        <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Contact()">Contact</a>
         <a v-on:click="openCV()">Resume</a>
     </div>
@@ -31,42 +31,38 @@ export default{
     },
     //sort this out
     methods : {
-        Home: function(){
-          this.flushSel(); 
-          this.$router.push('/')
-          this.headerArr[0].style.backgroundColor = '#ddd'
-          this.headerArr[0].style.color = 'black'
-          
-        },
         Qualifications: function(){
           this.flushSel();
+          document.getElementById('quals').scrollIntoView();
           this.$router.push('/qualifications')
-          this.headerArr[1].style.backgroundColor = '#ddd'
-          this.headerArr[1].style.color = 'black'
+          // this.headerArr[1].style.backgroundColor = '#ddd'
+          // this.headerArr[1].style.color = 'black'
         },
         Experience: function(){
+          document.getElementById('exp').scrollIntoView();
           this.flushSel();
           this.$router.push('/experience')
-          this.headerArr[2].style.backgroundColor = '#ddd'
-          this.headerArr[2].style.color = 'black'
+          // this.headerArr[2].style.backgroundColor = '#ddd'
+          // this.headerArr[2].style.color = 'black'
         },
         Projects : function(){
           this.flushSel();
           this.$router.push('/projects')
-          this.headerArr[3].style.backgroundColor = '#ddd'
-          this.headerArr[3].style.color = 'black'
+          // this.headerArr[3].style.backgroundColor = '#ddd'
+          // this.headerArr[3].style.color = 'black'
         },
         Contact : function(){
+          document.getElementById('deets').scrollIntoView();
           this.flushSel();
           this.$router.push('/contact')
-          this.headerArr[4].style.backgroundColor = '#ddd'
-          this.headerArr[4].style.color = 'black'
+          // this.headerArr[4].style.backgroundColor = '#ddd'
+          // this.headerArr[4].style.color = 'black'
         },
         flushSel : function(){
-          for(var i = 0; i < this.headerArr.length; i++){
-              this.headerArr[i].style.backgroundColor = '#181818';
-              this.headerArr[i].style.color = 'white';
-          }
+          // for(var i = 0; i < this.headerArr.length; i++){
+          //     this.headerArr[i].style.backgroundColor = '#181818';
+          //     this.headerArr[i].style.color = 'white';
+          // }
         },
         openCV : function(){
 
@@ -79,8 +75,8 @@ export default{
       
       //sel home first, bug if user visits another route first or refereshes NEEDS FIX 
       //or uses the contact me link at bottom
-      this.headerArr[0].style.backgroundColor = '#ddd'
-      this.headerArr[0].style.color = 'black'
+      // this.headerArr[0].style.backgroundColor = '#ddd'
+      // this.headerArr[0].style.color = 'black'
 
       //needs refining
       //maybe a method which selects the ele depending on the current route
@@ -92,9 +88,11 @@ export default{
 
 <style>
 .big {
-  height: 70px;
-  width: 70px;
-  margin-left: 35px;
+  height: 60px;
+  width: 60px;
+  margin-left: 40px;
+  margin-top: -20px;
+
  
 }
 
@@ -114,17 +112,24 @@ export default{
 
   display: flex;
   padding-top: 35px;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #181818;
+  width: 100%;
+  height: 80px
   
 
 
 }
 
 .header a {
-  padding: 8px;
+  padding: 15px;
   font-size: 15px;
-  padding-top: 25px;
-
+  padding-top: 0px;
+  text-decoration: none;
+  color: white;
   
 
 }

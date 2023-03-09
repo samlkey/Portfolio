@@ -1,5 +1,5 @@
 <template>
-    <div class="content-wrap">
+    <div id="quals" class="content-wrap">
         <h1>Sheffield Hallam University: Sept 2021 - Present</h1>
         <div class="qual">
             <p>MSc Cyber Security</p>
@@ -78,7 +78,6 @@
 .qual {
     display: flex;
     gap: 200px;
-    background: #E8E8E8;
     margin-left: 50px;
     width: 90%;
 }

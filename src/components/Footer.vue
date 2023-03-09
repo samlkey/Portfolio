@@ -1,29 +1,19 @@
 <template> 
     <div class="footer">
-        <div class="wrapper">
-            <a target="_blank" href="https://github.com/samlkey">
-                <img class="icon" src="../images/github.png">
-            </a>
+        <div>
             <a target="_blank" href="https://www.linkedin.com/in/samkey726/">
                 <img class="icon" src="../images/linkedin.png">
             </a>
-    </div>
-
-
-    
-        <div class="bottom-tag">
-            <p class="text">Sam Key</p>
-            <p class="text">samkey726@gmail.com</p>
-            <p class="text"><a href="/contact">Contact Me!</a></p>
-            <p class="text">Made using Vue.js</p>
         </div>
-        
-    </div>
+            <a target="_blank" href="https://github.com/samlkey">
+                <img class="icon" src="../images/github.png">
+            </a>  
+        </div>
 </template>
 
 <style>
 .wrapper {
-    display: flex;
+
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -47,15 +37,21 @@
     margin-top: 20px;
 }
 
+
+
 .wrapper img:hover {
     cursor: pointer;
 }
 
+.footer a :hover {
+    transform: translateY(-3px);
+
+}
 
 
 
 .bottom-tag {
-    display: flex;
+
     justify-content: center;
     padding-top: 15px;
 
@@ -81,12 +77,12 @@
 * { box-sizing: border-box; }
 
 .footer {
-    background-color: #181818;
-    margin-top: -13px;
+    display: block;
     color: white;
     bottom: 0;
-    width: 100%;
-    position: relative;
-    
+    width: 10%;
+    height: 100px;
+    position: fixed;
+    margin-bottom: 100px;
 }
 </style>
