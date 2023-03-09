@@ -23,14 +23,14 @@ export default {
 
 <style>
 .content {
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 0 1px 1px;
   position: relative;
-  border-color: #e5e5e5; /* USE #e5e5e5; */
   min-height: 100vh;
   font-family: century;
-  margin-top: 45px
+  margin-top: 100px;
+  color: white; 
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #app {
   font-family: Verdana,Arial;
@@ -39,7 +39,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  
+ 
 }
 .main {
   margin-bottom: 0;
@@ -47,13 +47,14 @@ export default {
   margin-right: auto;
   position: relative;
   text-align: left;
-  width: 1060px;
+
   
 
 }
 html, body {
   margin: 0;
   padding: 0;
+  background: #181818;
 
 }
 

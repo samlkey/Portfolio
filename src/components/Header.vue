@@ -3,8 +3,12 @@
   <h1>Sam Key</h1>
 </div> -->
 
-
 <div class="header">
+  <div>
+    <a target="_blank" href="https://www.samkey.site">
+        <img class="big" src="../images/sk.png">
+    </a>
+  </div>
     <div id="m" class="menu">
         <a v-on:click="Home()">Home</a>
         <a v-on:click="Qualifications()">Qualifications</a>
@@ -65,7 +69,7 @@ export default{
           }
         },
         openCV : function(){
-          
+
         }
     },
     mounted(){
@@ -87,35 +91,53 @@ export default{
 </script>
 
 <style>
-.smallheader h1 {
-  font-size: 40px;
+.big {
+  height: 70px;
+  width: 70px;
+  margin-left: 35px;
+ 
+}
+
+
+/* .smallheader h1 {
+  font-size: 70px;
 }
 
 .smallheader {
   height: 50px;
-}
+} */
 
 .header {   
   color: white; 
   font-weight: bold;
   overflow: hidden;  
-  background: #181818;
+
   display: flex;
-  height: 35px;
+  padding-top: 35px;
+
+  
+
+
 }
 
 .header a {
   padding: 8px;
   font-size: 15px;
+  padding-top: 25px;
+
+  
+
 }
 
 .header a:hover {
   cursor: pointer;
+  text-shadow: 2px 2px #8f8b8b;
 }
 
 .menu {
   float: right;
   display: flex;
   gap: 3%;
+  margin-left: 1100px;
 }
 </style>
