@@ -1,7 +1,7 @@
 <template>
-<div class="smallheader">
+<!-- <div class="smallheader">
   <h1>Sam Key</h1>
-</div>
+</div> -->
 
 
 <div class="header">
@@ -11,6 +11,7 @@
         <a v-on:click="Experience()">Experience</a>
         <a v-on:click="Projects()">Projects</a>
         <a v-on:click="Contact()">Contact</a>
+        <a v-on:click="openCV()">Resume</a>
     </div>
 </div>
 </template>
@@ -62,6 +63,9 @@ export default{
               this.headerArr[i].style.backgroundColor = '#181818';
               this.headerArr[i].style.color = 'white';
           }
+        },
+        openCV : function(){
+          
         }
     },
     mounted(){

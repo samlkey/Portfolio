@@ -52,10 +52,10 @@
         It would be a pleasure if you could consider me for any upcoming opportunities. For inquires please contact me below. I am looking forward to hearing from you!
         </p>
 
-        <form @submit="submit">
-            <input type="email" id="email" name="email" size="45" maxlength="35" placeholder="Your Email"><br><br>
-            <input type="text" id="name" name="name" size="45" maxlength="40" placeholder="Subject"><br><br>
-            <textarea rows="10" cols="40" placeholder="Message" maxlength="500"></textarea><br><br>
+        <form @submit.prevent="submit" ref="form">
+            <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Your Email"><br><br>
+            <input type="text" id="subject" name="subject" size="45" maxlength="40" placeholder="Subject"><br><br>
+            <textarea rows="10" cols="40" placeholder="Message" maxlength="500" id="msg" name="message"></textarea><br><br>
             <input type="submit" class="submit" value="Submit">
         </form> 
 
@@ -65,7 +65,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios' //needs removing
+import emailjs from '@emailjs/browser';
 
 
 export default{
@@ -74,29 +75,31 @@ export default{
     name: 'Contact',
 
     methods : {
-        submit(e) {
-            e.preventDefault();
-            console.log("working!")
+        submit() {
+            //PREVENT EMPTY
+            var empty = false; 
+            var email = document.getElementById('email').value; 
+            if (email == "") empty = true
 
-            const headers = {
-                'Access-Control-Allow-Origin' : '*'
-            }
+            var subj = document.getElementById('subject').value;
+            if (subj == "") empty = true
+
+            var msg = document.getElementById('msg').value; 
+            if(msg == "") empty = true
 
 
-            axios.post("http://127.0.0.1:8000/Submit.php", "hi", {
-                headers: headers
+            if(empty == false){
+                emailjs.sendForm('service_1x8gz0k', 'template_oy6tptt', this.$refs.form, 'v9uCAmwdCEkYwiDQc')
+                    .then((result) => {
+                        console.log("YES!", result.text);
+                        alert("Thank you for contacting, I should be able to contact you back within the coming days")
+                }, (error) => {
+                    console.log("NO!", error.text);
             })
+            }else{
+                alert("Please fill out any empty fields")
+            }
         },
-
-
-        //could escilate to main copy to clipboard function widely used
-        t: function() {
-            console.log("hi")
-            
-            navigator.clipboard.writeText('07')
-          
-
-        }
     }
 }
 
