@@ -1,6 +1,6 @@
 <template>
     <div class="cont">
-        <h1>Hi, my name is</h1>
+        <h1>Hello, my name is</h1>
         <div class="name">
             <h1>Sam Key.</h1>
             <h2>Graduate Software Developer.</h2>
@@ -13,12 +13,26 @@
 
     </div>
 
+    <div class="arrow">
+        <a v-on:click="AboutMe()">
+            <img class="arrow" src="../images/arrow.png">
+        </a>
+    </div>
+      
+
+
    
 
 </template>
 <script>
 export default {
-    name: "Home"
+    name: "Home",
+    methods : {
+        //could import from different component
+        AboutMe : function(){
+            document.getElementById('aboutScroll').scrollIntoView()
+        }
+    }
 }
 
 </script>
@@ -30,11 +44,25 @@ export default {
 
     margin-left: 300px;
 
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 
 
 
 }
+
+.arrow {
+    margin-top: -50px;
+    width: 60px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow :hover{
+    cursor: pointer; 
+    transform: translateY(3px);
+}
+
 
 .name h2 {
     font-size: 60px;

@@ -1,7 +1,7 @@
 <template>
 
     <div class="qualTitle">
-            <h1 style="color: #808080">01.</h1>
+            <h1 style="color: #808080">02.</h1>
             <h1>Qualifications</h1>
     </div>
     
@@ -113,7 +113,7 @@
 
 .content-wrap h1 {
     font-size: 20px; 
-    padding-top: 20px;
+    padding-top: 5px;
     margin-left: 3%;
     font-style: italic;
 }

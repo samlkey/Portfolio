@@ -1,6 +1,6 @@
 <template>
     <div class="qualTitle">
-            <h1 style="color: #808080">02.</h1>
+            <h1 style="color: #808080">03.</h1>
             <h1>Experience</h1>
     </div>
 
@@ -79,7 +79,7 @@
 .exp-wrapper {
     display: flex;
     gap: 400px;
-    margin-bottom: 120px;
+    margin-bottom: 65px;
 }
 
 .exp li {

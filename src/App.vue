@@ -3,13 +3,18 @@
     <Header></Header>
     <div class="content">
       <Home></Home>
+      <div id="aboutScroll">
+      <AboutMe></AboutMe>
+      </div>
       <div id="qualScroll">
       <Qualifications></Qualifications>
       </div>
       <div id="expScroll">
       <Experience></Experience>
       </div>
-      <Contact></Contact>
+      <div id="contactScroll">
+        <Contact></Contact>
+      </div>
     </div>
   </div>
   <Footer></Footer>
@@ -22,6 +27,7 @@ import Home from './components/Home.vue'
 import Qualifications from './components/Qualifications.vue';
 import Experience from './components/Experience.vue';
 import Contact from './components/Contact.vue';
+import AboutMe from './components/AboutMe.vue';
 
 
 
@@ -36,19 +42,25 @@ export default {
     Home,
     Qualifications,
     Experience,
-    Contact
+    Contact,
+    AboutMe
 }
 }
 </script>
 
 <style>
 #qualScroll{
-  padding-top: 130px;
+  padding-top: 120px;
 }
 
 #expScroll{
-  padding-top: 130px;
+  padding-top: 120px;
 }
+
+#aboutScroll {
+  padding-top: 180px;
+}
+
 
 
 .content {

@@ -2,52 +2,16 @@
     <head>
         <meta charset="UTF-8">
     </head>
-    <!-- <h1> Consider Taking a Copy of my CV</h1>
-    <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
-    <div id="deets" class="details">
-        <!--Implement Icons-->
 
 
-        <div class="pair">
-
-            <a href="mailto: samkey726@gmail.com" class="linked">
-                <img class="icon" src="../images/email.jpg">
-            </a>
-
-
-        </div>
-
-        <div class="pair">
-            <a class="linked" target="_blank" href="https://www.linkedin.com/in/samkey726/">
-                <img class="icon" src="../images/linkedin.png">
-            </a>
-    
-        </div>
-
-        <div class="pair">
-            <a class="linked" target="_blank" href="https://github.com/samlkey">
-                <img class="icon" src="../images/github.png">
-            </a>
-        </div>
-
-        <div class="pair">
-        
-      
-
-
-            <a class="linked" onclick='navigator.clipboard.writeText("07944994022")'>
-                <img class="icon" src="../images/phone.png">
-            </a>
-        </div>
-
-       
-      
-
-
+    <div class="qualTitle">
+            <h1 style="color: #808080">04.</h1>
+            <h1>Contact</h1>
     </div>
+    
+
 
     <div class="contact">
-        <h1>Get in Touch</h1>
         <p>
         It would be a pleasure if you could consider me for any upcoming opportunities. For inquires please contact me below. I am looking forward to hearing from you!
         </p>
@@ -133,33 +97,24 @@ export default{
 
 
 
-.details {
-    text-align: center;
-    padding-top: 15px;
-    display: flex; 
-    margin-left: 30px;
-}
 
-.details p {
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .contact {
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
 
 }
 
 .contact p {
-    width: 350px;
+    width: 500px;
     margin-left: 33%;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .contact form {
-    margin-top: 60px;
+    margin-top: 120px;
+    margin-left: 45px;
 }
 
 .contact input {

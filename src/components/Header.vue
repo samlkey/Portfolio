@@ -10,14 +10,14 @@
     </a>
   </div>
     <div id="m" class="menu">
-        <a href="#">Home</a>
+        <a v-on:click="AboutMe()">About Me</a>
         <a v-on:click="Qualifications()">Qualifications</a>
         <a v-on:click="Experience()">Experience</a>
         <!-- <a v-on:click="Projects()">Projects</a> -->
         <a v-on:click="Contact()">Contact</a>
         <!-- <a class="resum" v-on:click="openCV()">Resume</a> -->
 
-        <button href="/files/CV.pdf" download>CV</button>
+        <button v-on:click="openCV()" download>CV</button>
     </div>
 </div>
 </template>
@@ -57,9 +57,9 @@ export default{
           // this.headerArr[3].style.color = 'black'
         },
         Contact : function(){
-          document.getElementById('deets').scrollIntoView();
+          document.getElementById('contactScroll').scrollIntoView();
           this.flushSel();
-          this.$router.push('/contact')
+
           // this.headerArr[4].style.backgroundColor = '#ddd'
           // this.headerArr[4].style.color = 'black'
         },
@@ -70,7 +70,10 @@ export default{
           // }
         },
         openCV : function(){
-            window.open('../files/CV.pdf')
+            window.open('/files/CV.pdf')
+        },
+        AboutMe : function(){
+            document.getElementById('aboutScroll').scrollIntoView();
         }
     },
     mounted(){

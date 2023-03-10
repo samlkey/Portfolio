@@ -1,6 +1,11 @@
 <template> 
     <div class="footer">
         <div>
+            <a href="mailto: samkey726@gmail.com">
+                <img class="icon" src="../images/email.png">
+            </a>
+        </div>
+        <div>
             <a target="_blank" href="https://www.linkedin.com/in/samkey726/">
                 <img class="icon" src="../images/linkedin.png">
             </a>
@@ -9,6 +14,7 @@
                 <img class="icon" src="../images/github.png">
             </a>  
         </div>
+        
 </template>
 
 <style>
@@ -81,7 +87,7 @@
     color: white;
     bottom: 0;
     width: 10%;
-    height: 100px;
+    height: 160px;
     position: fixed;
     margin-bottom: 100px;
 }
