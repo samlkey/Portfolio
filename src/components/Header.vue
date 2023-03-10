@@ -163,7 +163,7 @@ export default{
   padding-top: 0px;
   text-decoration: none;
   color: white;
-  
+  width: 130px;
 
 }
 
@@ -176,6 +176,6 @@ export default{
   float: right;
   display: flex;
   gap: 3%;
-  margin-left: 1100px;
+  margin-left: 1000px;
 }
 </style>

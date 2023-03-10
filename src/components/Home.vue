@@ -6,10 +6,10 @@
             <h2>Graduate Software Developer.</h2>
         </div>
         <!-- add something from CV here -->
-        <p>askdhjjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhas
+        <!-- <p>askdhjjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhas
             kdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdh
             jjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhaskd
-            jhaskjdhakjshdkjsahdkajs</p>
+            jhaskjdhakjshdkjsahdkajs</p> -->
 
     </div>
 
