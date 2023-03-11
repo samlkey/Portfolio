@@ -113,6 +113,18 @@ export default{
   border-radius: 10px;
   margin-left: 10px;
 
+
+  -webkit-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+
+
+  -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  -o-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+
 }
 
 
@@ -121,6 +133,11 @@ export default{
   background-color: #c9c9c9;
   color: black; 
   border: #c9c9c9;
+
+
+
+
+
 }
 
 /* .smallheader h1 {

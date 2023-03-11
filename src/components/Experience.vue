@@ -229,7 +229,7 @@ export default{
 }
 
 .qualBtn{
-    background: green; 
+  
     width: 180px;
     height: 50px;
     font-weight: bold;
@@ -237,6 +237,14 @@ export default{
     color: #cfcfcf;
     text-decoration: none;
     border: 0;
+
+
+
+    
+  -webkit-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
 }
 
 .menu1 div{
