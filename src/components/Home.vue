@@ -6,10 +6,8 @@
             <h2>Graduate Software Developer.</h2>
         </div>
         <!-- add something from CV here -->
-        <!-- <p>askdhjjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhas
-            kdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdh
-            jjasjkdhaskjdhaskdjhaskjdhakjshdkjsahdkajsaskdhjjasjkdhaskjdhaskd
-            jhaskjdhakjshdkjsahdkajs</p> -->
+        <p class="tag">Adventurous and determined student with an expanding eagerness and willingness to make a substantial contribution within
+                          the workplace.</p>
 
     </div>
 
@@ -48,6 +46,10 @@ export default {
 
 
 
+}
+
+.tag{
+    width: 90%;
 }
 
 .arrow {

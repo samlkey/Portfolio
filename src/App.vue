@@ -58,7 +58,7 @@ export default {
 }
 
 #aboutScroll {
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 

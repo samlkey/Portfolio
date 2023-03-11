@@ -1,6 +1,6 @@
 <template>
-    <div class="qualTitle">
-            <h1 style="color: #808080">01.</h1>
+    <div class="qualsTitle">
+            <h2 style="color: #808080">01.</h2>
             <h1>About Me</h1>
     </div>
 
@@ -15,9 +15,92 @@
             </p>
         </div>
     </div>
+    <div class="lang-wrapper">
+        <div class="lang">
+            <h1>Known Languages.</h1>
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+            
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+            
+
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          
+
+            <div>
+        
+                <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+
+
+                <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          
+                
+                <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+          
+                
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          
+            </div>
+        </div>
+
+        <div>
+            <h1>Known Frameworks.</h1>
+
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          
+            
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
+          
+          
+
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+          
+
+
+            <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" />
+          
+
+
+        </div>
+    </div>
+ 
 </template>
 
 <style>
+.lngIcon {
+    height: 50px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.lang {
+    text-align: center;
+}
+
+
+.lang-wrapper{
+    display: flex;
+    gap: 50%;
+    justify-content: center;
+}
+
+
+.qualsTitle {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 30px;
+    margin-left: 22%;
+}
+
+.qualsTitle h2{
+    padding-top: 11px;
+}
+
+
+
+
 
 .right-of-image p {
     padding-left: 16px;
@@ -26,17 +109,17 @@
 
 .wrapper {
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
 .avatar {
-    max-width: 205px;
-    max-height: 210 px;
+    max-width: 300px;
+    max-height: 300px;
     margin-top: 25px;
     margin-left: 25px;
     border: 5px solid black; 
-    border-radius: 50%;
+    border-radius: 25%;
     box-shadow: 0 0 0 7px #fff, 
                 0 0 0 8px rgb(0, 0, 0);
 }

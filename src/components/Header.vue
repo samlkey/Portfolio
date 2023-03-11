@@ -32,9 +32,6 @@ export default{
         headerArr: null
       }
     },
-    components: {
-      // pdf
-    },
     //sort this out
     methods : {
         Qualifications: function(){
@@ -104,6 +101,7 @@ export default{
  
 }
 
+
 .menu button {
   text-decoration: none;
   margin-top: -10px;
@@ -117,8 +115,12 @@ export default{
 
 }
 
-.menu button :hover {
+
+.menu button:hover {
   cursor: pointer;
+  background-color: #c9c9c9;
+  color: black; 
+  border: #c9c9c9;
 }
 
 /* .smallheader h1 {
