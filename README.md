@@ -15,25 +15,25 @@ Built using:
 
 ## Setting up
 
-- Setup directory
+1. Setup directory
 ```
 npm install
 ```
-- Run the development server
+2. Run the development server
 ```
 npm run serve
 ```
 
 ## Deployment
 
-- Build files
+1. Build files
 ```
 npm run build
 ```
 
 ## Troubleshooting
 
-- Lint and fixe files
+1. Lint and fixe files
 ```
 npm run lint
 ```
