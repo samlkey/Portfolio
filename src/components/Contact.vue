@@ -4,9 +4,9 @@
     </head>
 
 
-    <div class="qualTitle">
+    <div class="conTitle">
             <h1 style="color: #808080">04.</h1>
-            <h1>Contact</h1>
+            <h1>Contact Me</h1>
     </div>
     
 
@@ -74,6 +74,19 @@ export default{
 
 <style>
 
+.conTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.conTitle h2{
+    padding-top: 11px;
+}
+
+
 
 .linked {
     height: 30px;
@@ -102,7 +115,7 @@ export default{
 .contact {
     margin-top: 70px;
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 
 }
 
@@ -110,15 +123,20 @@ export default{
     width: 500px;
     margin-left: 33%;
     font-size: 20px;
+    margin-top: -50px;
 }
 
 .contact form {
     margin-top: 120px;
     margin-left: 45px;
+    font-size: 10px;
+    
 }
 
 .contact input {
     height: 25px; 
+    background-color:   #181818;
+    color: white;
 }
 
 .contact textarea {
@@ -126,6 +144,9 @@ export default{
     font-family: Verdana,Arial;
     font-size: 12px;
     width: 292px;
+    background-color:   #181818;
+    color: white;
+    text-decoration: none;
 }
 
 .contact h1 {

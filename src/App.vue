@@ -54,7 +54,7 @@ export default {
 }
 
 #expScroll{
-  padding-top: 120px;
+  padding-top: 0px;
 }
 
 #aboutScroll {

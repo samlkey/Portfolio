@@ -176,6 +176,23 @@ export default{
 </script>
 
 <style>
+.expTitle h1::after{
+
+
+content: "";
+display: block;
+position: relative;
+width: 400px;
+height: 1px;
+background-color: #808080;
+margin-left: 190px;
+margin-top: -17px;
+
+
+}
+
+
+
 .menu1 {
 
     font-size: 20px;

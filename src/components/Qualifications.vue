@@ -26,6 +26,7 @@
            <p class="mark" id="mark2">2.2</p>
        </div>
 
+
        <h1>John Leggott College: Sept 2016 - June 2018</h1>
        <div class="qual">
            <p>IT Extended Diploma</p>
@@ -42,17 +43,28 @@
            <p class="mark" id="mark5">C</p>
        </div>
 
-       <h1>Additional Qualifications</h1>
+    </div>
+
+    <!-- <div class="right-qual">
+
+       <h1>John Leggott College: Sept 2016 - June 2018</h1>
        <div class="qual">
-           <p>RSL Grade 4 Drum Performance</p>
-               <p class="mark" id="mark6">M</p>
+           <p>IT Extended Diploma</p>
+           <p class="mark" id="mark3">D*D*D*</p>
        </div>
 
        <div class="qual">
-           <p>RSL Grade 3 Drum Performance</p>
-               <p class="mark" id="mark7">M</p>
+           <p>IT Diploma</p>
+           <p class="mark" id="mark4">D*</p>
        </div>
-   </div>
+       
+       <div class="qual">
+           <p>A-Level Use of Mathematics</p>
+           <p class="mark" id="mark5">C</p>
+       </div>
+
+      
+    </div> -->
 
 </div>
 
@@ -76,6 +88,21 @@ export default{
 
 
 <style>
+.qualTitle h1::after{
+
+
+content: "";
+display: block;
+position: relative;
+width: 400px;
+height: 1px;
+background-color: #808080;
+margin-left: 233px;
+margin-top: -17px;
+
+
+}
+
 
 
 
@@ -96,25 +123,7 @@ export default{
 
 
 /* padding for marks, must be a better way to do this! */
-#mark7{
-    padding-left: 220px;
-}
 
-#mark6 {
-    padding-left: 220px;
-}
-
-#mark5 {
-    padding-left: 252px;
-}
-
-#mark4 {
-    padding-left: 380px;
-}
-
-#mark3 {
-    padding-left: 283px;
-}
 
 #mark2 {
     padding-left: 217px;
@@ -151,8 +160,19 @@ export default{
 }
 
 .content-wrap {
-    margin-bottom: 10%;
-    margin-left: 10px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.right-qual{
+    margin-left: -190px;
+
+}
+
+.content-wrap{
+    margin-top: 20px;
 }
 
 

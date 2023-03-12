@@ -18,6 +18,8 @@
     <div class="lang-wrapper">
         <div class="lang">
             <h1>Known Languages.</h1>
+        
+            <div class="flexlng">
             <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             
             <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
@@ -27,8 +29,8 @@
 
             <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
           
-
-            <div>
+        </div>
+            <div class="flexlng">
         
                 <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
 
@@ -44,8 +46,10 @@
             </div>
         </div>
 
-        <div>
+        <div class="lang">
             <h1>Known Frameworks.</h1>
+
+            <div class="flexlng">
 
             <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
           
@@ -59,7 +63,15 @@
 
 
             <img class="lngIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" />
-          
+            
+            </div>
+
+            <div class="flexlng">
+
+
+
+                
+            </div>
 
 
         </div>
@@ -68,14 +80,41 @@
 </template>
 
 <style>
+
+.qualsTitle h1::after{
+
+
+content: "";
+display: block;
+position: relative;
+width: 400px;
+height: 1px;
+background-color: #808080;
+margin-left: 180px;
+margin-top: -17px;
+
+
+}
+
+
+
+
 .lngIcon {
     height: 50px;
     margin-top: 30px;
-    padding-left: 50px;
+
+
+}
+
+.flexlng {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 
 .lang {
     text-align: center;
+    
 }
 
 
