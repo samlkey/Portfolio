@@ -2,52 +2,16 @@
     <head>
         <meta charset="UTF-8">
     </head>
-    <!-- <h1> Consider Taking a Copy of my CV</h1>
-    <a href="../files/CV.pdf" target="_blank" download>Yesyes</a> -->
-    <div class="details">
-        <!--Implement Icons-->
 
 
-        <div class="pair">
-
-            <a href="mailto: samkey726@gmail.com" class="linked">
-                <img class="icon" src="../images/email.jpg">
-            </a>
-
-
-        </div>
-
-        <div class="pair">
-            <a class="linked" target="_blank" href="https://www.linkedin.com/in/samkey726/">
-                <img class="icon" src="../images/linkedin.png">
-            </a>
-    
-        </div>
-
-        <div class="pair">
-            <a class="linked" target="_blank" href="https://github.com/samlkey">
-                <img class="icon" src="../images/github.png">
-            </a>
-        </div>
-
-        <div class="pair">
-        
-      
-
-
-            <a class="linked" onclick='navigator.clipboard.writeText("07944994022")'>
-                <img class="icon" src="../images/phone.png">
-            </a>
-        </div>
-
-       
-      
-
-
+    <div class="conTitle">
+            <h1 style="color: #808080">04.</h1>
+            <h1>Contact Me</h1>
     </div>
+    
+
 
     <div class="contact">
-        <h1>Get in Touch</h1>
         <p>
         It would be a pleasure if you could consider me for any upcoming opportunities. For inquires please contact me below. I am looking forward to hearing from you!
         </p>
@@ -61,6 +25,14 @@
 
     </div>
 
+
+    <div class="credit">
+        <p>Created using Vue.js</p>
+
+        <a class="credlink" target="_blank" href="https://github.com/samlkey/Portfolio">
+            <p>View my Respository!</p>
+        </a>
+    </div>
    
 </template>
 
@@ -109,6 +81,36 @@ export default{
 
 
 <style>
+.credit {
+    font-size: 13px;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    margin-left: 50px;
+
+}
+
+.credlink{
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+.conTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 30px;
+    font-family: century;
+    padding-top: 100px;
+}
+
+.conTitle h2{
+    padding-top: 11px;
+}
+
 
 
 .linked {
@@ -133,44 +135,54 @@ export default{
 
 
 
-.details {
-    text-align: center;
-    padding-top: 15px;
-    display: flex; 
-    margin-left: 30px;
-}
 
-.details p {
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .contact {
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 130px;
 
 }
 
 .contact p {
-    width: 350px;
+    width: 500px;
     margin-left: 33%;
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: -50px;
 }
 
 .contact form {
-    margin-top: 60px;
+    margin-top: 120px;
+    margin-left: 45px;
+    font-size: 10px;
+    
 }
 
 .contact input {
     height: 25px; 
+    background-color:   #181818;
+    color: white;
+    border-radius: 0.5em;
+    
+    border: solid 2px #808080;
+
 }
 
 .contact textarea {
     resize: none; 
     font-family: Verdana,Arial;
     font-size: 12px;
-    width: 292px;
+    width: 300px;
+    background-color:   #181818;
+    color: white;
+    text-decoration: none;
+
+   
+    border: solid 2px #808080;
+
+
+    border-radius: 0.5em;
+
 }
 
 .contact h1 {
@@ -180,6 +192,24 @@ export default{
 .submit {
     font-size: 15px; 
     border: 1px solid silver;
+    width: 100px;
+    font-size: 12px;
+
+    -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  -o-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+ 
+
 }
+
+
+input:hover[type="submit"]{
+    cursor: pointer;
+    background-color: #c9c9c9;
+    color: black; 
+    border: #c9c9c9;
+}
+
 
 </style>

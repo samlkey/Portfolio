@@ -1,24 +1,43 @@
-# portfolio
+# Portfolio
+Professional looking website
 
-## Project setup
+![alt text](/mdimg.png)
+
+
+
+Built using:
+
+* Vue.js
+* Emailjs
+* JavaScript
+* HTML
+* CSS
+
+## Setting up
+
+1. Setup directory
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+2. Run the development server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Deployment
+
+1. Build files
 ```
 npm run build
 ```
 
-### Lints and fixes files
+## Troubleshooting
+
+1. Lint and fixe files
 ```
 npm run lint
 ```
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
