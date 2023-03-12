@@ -57,25 +57,25 @@
     <div class="wrap">
       <div class="menu1">
         <div>
-           <button v-on:click="Display('1')" class="qualBtn">Clarks</button> 
+           <button v-on:click="Display('1')" class="qualBtn" id="bt1">Clarks</button> 
         </div>
         
         <div>
-            <button v-on:click="Display('2')" class="qualBtn">Home Bargains</button>
+            <button v-on:click="Display('2')" class="qualBtn" id="bt2">Home Bargains</button>
         </div>
         
         <div>
-             <button v-on:click="Display('3')" class="qualBtn">Gullivers</button>
+             <button v-on:click="Display('3')" class="qualBtn" id="bt3">Gullivers</button>
         </div>
         <div>
-             <button v-on:click="Display('4')" class="qualBtn">Jet Petrol</button>
+             <button v-on:click="Display('4')" class="qualBtn" id="bt4">Jet Petrol</button>
         </div>
         <div>
-             <button v-on:click="Display('5')" class="qualBtn">CRAM</button>
+             <button v-on:click="Display('5')" class="qualBtn" id="bt5">CRAM</button>
         </div>
     </div>
     <div class="exp-right">
-        <div id="1" style="display:none;">
+        <div id="1">
             <h1>Clarks,</h1>
             <h2>August - January 2023</h2>
             <ul>
@@ -153,6 +153,8 @@ days jobs were completed.</p>
     </div>
 </template>
 <script>
+
+
 export default{
     name: 'Experience',
     data(){
@@ -162,14 +164,28 @@ export default{
     },
     methods : {
         Display: function(element){
+            //make array of elements instead of ids
+            for(var i = 1; i < 6; i++){
+                //remove border
+                document.getElementById("bt" + i).style.borderLeft = "solid 2px rgb(85, 85, 85)"
+                document.getElementById("bt" + i).style.backgroundColor = "#181818"
+            }
+
             document.getElementById(this.currentDisplay).style.display = "none";
-            
+    
             document.getElementById(element).style.display = "block";
+       
+            document.getElementById('bt' + element).style.borderLeft = "solid 2px rgb(15, 15, 15)";
+            document.getElementById('bt' + element).style.backgroundColor = '#313131'
+            
+            
             this.currentDisplay = element; 
         },
     },
     mounted(){
         document.getElementById("1").style.display = "block"
+        document.getElementById('bt1').style.borderLeft = "solid 2px rgb(15, 15, 15)";
+        document.getElementById('bt1').style.backgroundColor = '#313131'
     }
 }
 
@@ -205,6 +221,7 @@ margin-top: -17px;
     font-weight: bold;
     gap: 30px;
     margin-left: 20%;
+    font-family: century;
 }
 
 .expTitle h2{
@@ -214,7 +231,7 @@ margin-top: -17px;
 
 .menu1 button:hover{
     cursor: pointer;
-    background-color: #313131;
+    background-color: #31313131;
     color:white;
 }
 
@@ -228,10 +245,16 @@ margin-top: -17px;
 }
 
 
+
+
+
+
 .exp-right {
     margin-left: 70px;
     margin-top: -15px;
 }
+
+
 
 .exp-right p{
     font-size: 18px;
@@ -264,9 +287,31 @@ margin-top: -17px;
   transition: background-color 0.4s linear;
 }
 
-.menu1 div{
+
+
+
+/* .menu1 div{
+    border-left: solid 2px rgb(85, 85, 85);
+} */
+
+
+#bt1{
     border-left: solid 2px rgb(85, 85, 85);
 }
+#bt2{
+    border-left: solid 2px rgb(85, 85, 85);
+}
+#bt3{
+    border-left: solid 2px rgb(85, 85, 85);
+}
+#bt4{
+    border-left: solid 2px rgb(85, 85, 85);
+}
+#bt5{
+    border-left: solid 2px rgb(85, 85, 85);
+    
+}
+
 
 .wrap{
     display: flex;

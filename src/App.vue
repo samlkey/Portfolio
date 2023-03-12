@@ -50,7 +50,7 @@ export default {
 
 <style>
 #qualScroll{
-  padding-top: 120px;
+  padding-top: 130px;
 }
 
 #expScroll{
@@ -66,7 +66,8 @@ export default {
 .content {
   position: relative;
   min-height: 100vh;
-  font-family: century;
+  /* font-family: century; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 100px;
   color: white; 
   width: 1300px;
@@ -75,6 +76,7 @@ export default {
 }
 #app {
   font-family: Verdana,Arial;
+ 
   font-size: 11px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -97,6 +99,7 @@ html, body {
   padding: 0;
   background: #181818;
   scroll-behavior: smooth;
+  
 }
 
 </style>

@@ -74,12 +74,14 @@ export default {
 
 .cont p {
     font-size: 20px;
+    margin-top: -30px;
 }
 
 .name {
     font-size: 60px;
     font-weight: bold;
     margin-top: -70px;
+    font-family: century;
 
 }
 

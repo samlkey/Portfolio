@@ -25,6 +25,14 @@
 
     </div>
 
+
+    <div class="credit">
+        <p>Created using Vue.js</p>
+
+        <a class="credlink" target="_blank" href="https://github.com/samlkey/Portfolio">
+            <p>View my Respository!</p>
+        </a>
+    </div>
    
 </template>
 
@@ -73,6 +81,21 @@ export default{
 
 
 <style>
+.credit {
+    font-size: 13px;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    margin-left: 50px;
+
+}
+
+.credlink{
+    text-decoration: underline;
+    color: white;
+}
+
+
 
 .conTitle {
     display: flex;
@@ -80,6 +103,8 @@ export default{
     font-size: 18px;
     font-weight: bold;
     gap: 30px;
+    font-family: century;
+    padding-top: 100px;
 }
 
 .conTitle h2{
@@ -115,7 +140,7 @@ export default{
 .contact {
     margin-top: 70px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
 
 }
 
@@ -137,16 +162,27 @@ export default{
     height: 25px; 
     background-color:   #181818;
     color: white;
+    border-radius: 0.5em;
+    
+    border: solid 2px #808080;
+
 }
 
 .contact textarea {
     resize: none; 
     font-family: Verdana,Arial;
     font-size: 12px;
-    width: 292px;
+    width: 300px;
     background-color:   #181818;
     color: white;
     text-decoration: none;
+
+   
+    border: solid 2px #808080;
+
+
+    border-radius: 0.5em;
+
 }
 
 .contact h1 {
@@ -156,6 +192,24 @@ export default{
 .submit {
     font-size: 15px; 
     border: 1px solid silver;
+    width: 100px;
+    font-size: 12px;
+
+    -webkit-transition: color 0.4s linear;
+  -moz-transition: color 0.4s linear;
+  -o-transition: color 0.4s linear;
+  transition: color 0.4s linear;
+ 
+
 }
+
+
+input:hover[type="submit"]{
+    cursor: pointer;
+    background-color: #c9c9c9;
+    color: black; 
+    border: #c9c9c9;
+}
+
 
 </style>

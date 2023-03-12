@@ -23,24 +23,24 @@
        <h1>Sheffield Hallam University: Sept 2018 - June 2021</h1>
        <div class="qual">
            <p>BSc Honours Computer Science</p>
-           <p class="mark" id="mark2">2.2</p>
+           <p class="mark" id="mark1">2.2</p>
        </div>
 
 
        <h1>John Leggott College: Sept 2016 - June 2018</h1>
        <div class="qual">
            <p>IT Extended Diploma</p>
-           <p class="mark" id="mark3">D*D*D*</p>
+           <p class="mark" id="mark1">D*D*D*</p>
        </div>
 
        <div class="qual">
            <p>IT Diploma</p>
-           <p class="mark" id="mark4">D*</p>
+           <p class="mark" id="mark1">D*</p>
        </div>
        
        <div class="qual">
            <p>A-Level Use of Mathematics</p>
-           <p class="mark" id="mark5">C</p>
+           <p class="mark" id="mark1">C</p>
        </div>
 
     </div>
@@ -112,6 +112,7 @@ margin-top: -17px;
     font-size: 18px;
     font-weight: bold;
     gap: 30px;
+    font-family: century;
 }
 
 .qualTitle h2{
@@ -125,13 +126,39 @@ margin-top: -17px;
 /* padding for marks, must be a better way to do this! */
 
 
-#mark2 {
-    padding-left: 217px;
+#grade {
+    right: 10px;
+    position: absolute;
 }
 
 #mark1 {
-    padding-left: 290px;
+    right: 200px;
+    position: absolute;
 }
+
+
+
+#mark3 {
+    padding-left: 300px;
+}
+
+#mark4 {
+
+}
+
+#mark5 {
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .qual {
@@ -155,14 +182,15 @@ margin-top: -17px;
 .content-wrap h1 {
     font-size: 20px; 
     padding-top: 5px;
-    margin-left: 3%;
+
     font-style: italic;
 }
 
 .content-wrap {
     margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-left: 200px;
  
 }
 
