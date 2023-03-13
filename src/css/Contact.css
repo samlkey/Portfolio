@@ -1,0 +1,73 @@
+.credit {
+    font-size: 13px;
+    justify-content: center;
+    display: flex;
+    gap: 5%;
+    margin-left: 50px;
+}
+
+.credlink{
+    text-decoration: underline;
+    color: white;
+}
+
+.conTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 30px;
+    font-family: century;
+    padding-top: 100px;
+}
+
+.contact {
+    text-align: center;
+    margin: 70px 0 130px 0;
+}
+
+.contact p {
+    width: 500px;
+    font-size: 20px;
+    margin: -50px 0 0 33%
+}
+
+.contact form {
+    font-size: 10px;
+    margin: 120px 0 0 45px;
+}
+
+.contact input {
+    height: 25px; 
+    background-color:   #181818;
+    color: white;
+    border-radius: 0.5em;    
+    border: solid 2px #808080;
+}
+
+.contact textarea {
+    resize: none; 
+    width: 300px;
+    background-color:   #181818;
+    color: white;
+    border: solid 2px #808080;
+    border-radius: 0.5em;
+}
+
+.submit {
+    font-size: 15px; 
+    border: 1px solid silver;
+    width: 100px;
+    font-size: 12px;
+    -webkit-transition: color 0.4s linear;
+    -moz-transition: color 0.4s linear;
+    -o-transition: color 0.4s linear;
+    transition: color 0.4s linear;
+}
+
+input:hover[type="submit"]{
+    cursor: pointer;
+    background-color: #c9c9c9;
+    color: black; 
+    border: #c9c9c9;
+}
