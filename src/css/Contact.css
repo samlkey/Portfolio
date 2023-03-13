@@ -4,15 +4,12 @@
     display: flex;
     gap: 5%;
     margin-left: 50px;
-
 }
 
 .credlink{
     text-decoration: underline;
     color: white;
 }
-
-
 
 .conTitle {
     display: flex;
@@ -24,86 +21,37 @@
     padding-top: 100px;
 }
 
-.conTitle h2{
-    padding-top: 11px;
-}
-
-
-
-.linked {
-    height: 30px;
-    width: 30px;
-    margin-top: 10px;
-    
-}
-
-.linked :hover {
-    cursor: pointer;
-}
-
-
-.pair{
-    display: flex; 
-    /* justify-content: center; */
-    padding-left: 70px;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-
-
-
-
 .contact {
-    margin-top: 70px;
     text-align: center;
-    margin-bottom: 130px;
-
+    margin: 70px 0 130px 0;
 }
 
 .contact p {
     width: 500px;
-    margin-left: 33%;
     font-size: 20px;
-    margin-top: -50px;
+    margin: -50px 0 0 33%
 }
 
 .contact form {
-    margin-top: 120px;
-    margin-left: 45px;
     font-size: 10px;
-    
+    margin: 120px 0 0 45px;
 }
 
 .contact input {
     height: 25px; 
     background-color:   #181818;
     color: white;
-    border-radius: 0.5em;
-    
+    border-radius: 0.5em;    
     border: solid 2px #808080;
-
 }
 
 .contact textarea {
     resize: none; 
-    font-family: Verdana,Arial;
-    font-size: 12px;
     width: 300px;
     background-color:   #181818;
     color: white;
-    text-decoration: none;
-
-   
     border: solid 2px #808080;
-
-
     border-radius: 0.5em;
-
-}
-
-.contact h1 {
-    font-size: 27px;
 }
 
 .submit {
@@ -111,15 +59,11 @@
     border: 1px solid silver;
     width: 100px;
     font-size: 12px;
-
     -webkit-transition: color 0.4s linear;
-  -moz-transition: color 0.4s linear;
-  -o-transition: color 0.4s linear;
-  transition: color 0.4s linear;
- 
-
+    -moz-transition: color 0.4s linear;
+    -o-transition: color 0.4s linear;
+    transition: color 0.4s linear;
 }
-
 
 input:hover[type="submit"]{
     cursor: pointer;

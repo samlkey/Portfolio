@@ -1,0 +1,69 @@
+.big {
+    height: 60px;
+    width: 60px;  
+    margin: -20px 0 0 40px;
+}
+  
+.menu button {
+    width: 200px;
+    font-weight: bold;
+    background: #181818;
+    color: white;
+    border-radius: 10px;
+    margin: -10px 0 15px 10px;
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+    -webkit-transition: color 0.4s linear;
+    -moz-transition: color 0.4s linear;
+    -o-transition: color 0.4s linear;
+    transition: color 0.4s linear;  
+}
+  
+.menu button:hover {
+    cursor: pointer;
+    background-color: #c9c9c9;
+    color: black; 
+    border: #c9c9c9;  
+}
+
+.header {   
+    color: white; 
+    font-weight: bold; 
+    display: flex;
+    padding-top: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #181818;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 10px 20px -10px black;
+}
+  
+.resum {
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: -10px 0 15px 0; 
+}
+  
+.header a {
+    padding: 15px;
+    font-size: 15px;
+    padding-top: 0px;
+    color: white;
+    width: 130px;
+}
+  
+.header a:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px #8f8b8b;
+}
+  
+.menu {
+    display: flex;
+    gap: 3%;
+    margin-left: 1000px;
+}

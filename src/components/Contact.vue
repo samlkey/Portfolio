@@ -21,46 +21,29 @@
         </a>
     </div>
 </template>
-
 <script>
-// import axios from 'axios' //needs removing
 import emailjs from '@emailjs/browser';
 
-
 export default{
-   
-
     name: 'Contact',
-
     methods : {
+        //todo:
+        //CLEAR FORM ON SUBMIT
+        //REPLACE ALERT() WITH HTML VISUALS
         submit() {
-            //PREVENT EMPTY
             var empty = false; 
-            var email = document.getElementById('email').value; 
-            if (email == "") empty = true
-
-            var subj = document.getElementById('subject').value;
-            if (subj == "") empty = true
-
-            var msg = document.getElementById('msg').value; 
-            if(msg == "") empty = true
-
-
+            if (document.getElementById('email').value == "" || document.getElementById('subject').value == "" || document.getElementById('msg').value == "") empty = true
             if(empty == false){
                 emailjs.sendForm('service_1x8gz0k', 'template_oy6tptt', this.$refs.form, 'v9uCAmwdCEkYwiDQc')
                     .then((result) => {
                         console.log("YES!", result.text);
                         alert("Thank you for contacting, I should be able to contact you back within the coming days")
-                }, (error) => {
-                    console.log("NO!", error.text);
-            })
-            }else{
-                alert("Please fill out any empty fields")
-            }
+                    }, (error) => {
+                        console.log("NO!", error.text);
+                })
+            }else alert("Please fill out any empty fields");
         },
     }
 }
-
-
 </script>
 <style src="../css/Contact.css" />
