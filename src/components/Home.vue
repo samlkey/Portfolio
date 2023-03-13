@@ -10,7 +10,7 @@
     </div>
     <div class="arrow">
         <a v-on:click="AboutMe()">
-            <img class="arrow" src="../images/arrow.png">
+            <img class="arrow" src="../assets/arrow.png">
         </a>
     </div>
 </template>

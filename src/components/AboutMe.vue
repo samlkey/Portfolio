@@ -4,7 +4,7 @@
             <h1>About Me</h1>
     </div>
     <div class="wrapper">
-        <img class="avatar" src="../images/avatar.jpg">
+        <img class="avatar" src="../assets/avatar.jpg">
         <div class="right-of-image">
             <p class="p1">Adventurous and determined student with an expanding eagerness and willingness to make a substantial contribution within
                           the workplace. At my finest when presented with a challenge, because of this I establish challenges in all aspects of my life- from

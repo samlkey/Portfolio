@@ -2,17 +2,17 @@
     <div class="footer">
         <div>
             <a href="mailto: samkey726@gmail.com">
-                <img class="icon" src="../images/email.png">
+                <img class="icon" src="../assets/email.png">
             </a>
         </div>
         <div>
             <a target="_blank" href="https://www.linkedin.com/in/samkey726/">
-                <img class="icon" src="../images/linkedin.png">
+                <img class="icon" src="../assets/linkedin.png">
             </a>
         </div>
         <div>
             <a target="_blank" href="https://github.com/samlkey">
-                <img class="icon" src="../images/github.png">
+                <img class="icon" src="../assets/github.png">
             </a>  
         </div>
     </div>

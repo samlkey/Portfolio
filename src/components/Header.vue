@@ -2,7 +2,7 @@
 <div class="header">
   <div>
     <a target="_blank" href="https://www.samkey.site">
-        <img class="big" src="../images/sk.png">
+        <img class="big" src="../assets/sk.png">
     </a>
   </div>
     <div id="m" class="menu">
