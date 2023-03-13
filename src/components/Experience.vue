@@ -1,4 +1,7 @@
 <template>
+    <div id="titleScroll">
+
+    </div>
     <div class="expTitle">
             <h2 style="color: #808080">03.</h2>
             <h1>Experience</h1>
@@ -192,6 +195,9 @@ export default{
 </script>
 
 <style>
+
+
+
 .expTitle h1::after{
 
 

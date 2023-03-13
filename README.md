@@ -1,5 +1,5 @@
 # Portfolio
-Professional looking website
+Professional looking website using Vue.js
 
 ![alt text](/mdimg.png)
 

@@ -4,13 +4,13 @@
     <div class="content">
       <Home></Home>
       <div id="aboutScroll">
-      <AboutMe></AboutMe>
+        <AboutMe></AboutMe>
       </div>
       <div id="qualScroll">
-      <Qualifications></Qualifications>
+        <Qualifications></Qualifications>
       </div>
       <div id="expScroll">
-      <Experience></Experience>
+        <Experience></Experience>
       </div>
       <div id="contactScroll">
         <Contact></Contact>
@@ -21,6 +21,7 @@
 </template>
 
 <script> 
+// || COMPONENT IMPORT ||
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Home from './components/Home.vue'
@@ -29,11 +30,8 @@ import Experience from './components/Experience.vue';
 import Contact from './components/Contact.vue';
 import AboutMe from './components/AboutMe.vue';
 
-
-
-
-
 document.title = "Sam Key's Resume"
+
 export default {
   name: 'App',
   components: {
@@ -48,58 +46,4 @@ export default {
 }
 </script>
 
-<style>
-#qualScroll{
-  padding-top: 130px;
-}
-
-#expScroll{
-  padding-top: 0px;
-}
-
-#aboutScroll {
-  padding-top: 120px;
-}
-
-
-
-.content {
-  position: relative;
-  min-height: 100vh;
-  /* font-family: century; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-top: 100px;
-  color: white; 
-  width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#app {
-  font-family: Verdana,Arial;
- 
-  font-size: 11px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
- 
-}
-.main {
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  text-align: left;
-
-  
-
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  background: #181818;
-  scroll-behavior: smooth;
-  
-}
-
-</style>
+<style src="./css/App.css" />
