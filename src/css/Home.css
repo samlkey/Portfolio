@@ -1,0 +1,128 @@
+button {
+
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    background: #181818;
+    color: white;
+    border-radius: 10px;
+
+    border: 0;
+    font-size: 20px;
+    margin: auto 0 auto 0;
+    
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+    -webkit-transition: color 0.4s linear;
+    -moz-transition: color 0.4s linear;
+    -o-transition: color 0.4s linear;
+    transition: color 0.4s linear;  
+}
+  
+button:hover {
+    cursor: pointer;
+    background-color: #c9c9c9;
+    color: black; 
+    border: #c9c9c9;  
+}
+
+
+.cont {
+    font-size: 10px;
+    margin-bottom: auto;
+    width: 75%;
+}
+
+.tag{
+    width: 60%;
+    margin-bottom: 3%;
+}
+
+.arrow {
+    width: 50px;
+    height: 40px;
+    margin: 0 auto 0 auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+.cube{
+    margin-top: 18%;
+}
+
+
+.wrapper {
+    display: flex;
+    margin-top: 18%;
+    gap: 10%;
+    height: 65vh;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.arrow :hover{
+    cursor: pointer; 
+    transform: translateY(3px);
+}
+
+.name h2 {
+    font-size: 60px;
+    margin-top: -90px;
+    color: #76ABAE;
+}
+
+.cont p {
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.name {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -70px;
+    font-family: century;
+}
+
+.intro{
+    color: #808080;
+}
+
+/*MOBILE */
+@media only screen and (max-width: 600px) {
+    .cont {
+        margin-left: 3%;
+        width: 100vw !important;
+        margin: 0;
+    }
+
+    .name h1 {
+        font-size: 80px;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .name h2 {
+        font-size: 27px;
+        padding-bottom: 2%;
+    }
+
+    .tag {
+        font-size: 100px;
+        padding-top: 4%;
+    }
+
+    .arrow { 
+        margin: 0; 
+    }
+}
