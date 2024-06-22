@@ -2,14 +2,16 @@
     color: white; 
     font-weight: bold; 
     display: flex;
-    position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 15vh;
+    position: fixed;
     z-index: 99;
-    background: #222831;
-    width: 100vw;
-    height: 80px;
-    gap: 35%;
+}
+
+.header div{
+    width: 47%;
 }
   
 .title{
@@ -26,10 +28,8 @@
     border: 2px solid white;
     margin: -10px 0 15px 0; 
 }
-  
+
 .header a {
-    padding: 15px;
-    font-size: 15px;
     color: white;
 }
 
@@ -68,10 +68,31 @@ a:hover::before {
     font-size: 20px;
 }
 
+.burger {
+    display: flex;
+    margin: auto 0 auto 0;
+    gap: 1vw;
+    justify-content: right;
+}
+
+.burger img{
+    width: 60px;
+    height: auto;
+}
+
+.burger img:hover{
+    cursor: pointer;
+}
+
+.moon {
+    width: 45px !important;
+    height: auto !important;
+}
+
 /*MOBILE */
 @media only screen and (max-width: 600px) {
     .header {
-        width: 100vw;
+        gap: 30vw;
     }
     
     .menu {

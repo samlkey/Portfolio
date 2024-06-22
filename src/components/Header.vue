@@ -2,29 +2,12 @@
 <div class="header">
   <div class="title">
     <a target="_blank" href="https://www.samkey.site">
-        SAM KEY
+        SK
     </a>
   </div>
-  <div id="m" class="menu">
-    <div>
-      <ul class="context">
-        <li>
-          <a v-on:click="AboutMe()">About Me</a>
-        </li>
-        <li>
-          <a v-on:click="Qualifications()">Portfolio</a>
-        </li>
-        <li>
-          <a v-on:click="Experience()">Experience</a>
-        </li>
-        <li>
-          <a v-on:click="Contact()">Contact</a>
-        </li>
-        <li>
-          <a v-on:click="openCV()" download>Resume</a>
-        </li>
-      </ul>
-    </div>
+  <div class="burger">
+      <img class="moon" src="../assets/moon.svg">
+      <img src="../assets/burger.svg">
   </div>
 </div>
 </template>
@@ -32,12 +15,6 @@
 export default{
     name: 'Header',
     methods : {
-        Qualifications: function(){
-          document.getElementById('qualScroll').scrollIntoView();
-        },
-        Experience: function(){
-          document.getElementById('expScroll').scrollIntoView();
-        },
         Contact : function(){
           document.getElementById('contactScroll').scrollIntoView();
         },
