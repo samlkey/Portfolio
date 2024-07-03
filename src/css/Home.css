@@ -1,12 +1,38 @@
-button {
+.home-main{
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
 
+.wrap-home {
+    display: flex;
+    background-color: var(--main-colour);
+    justify-content: center; 
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+
+.cont {
+    font-size: 10px;
+    width: 40vw;
+}
+
+.emoji{
+    width: 20vw;
+    height: auto;
+}
+
+
+button {
     width: 300px;
     height: 50px;
     font-weight: bold;
     background: #181818;
     color: white;
     border-radius: 10px;
-
     border: 0;
     font-size: 20px;
     margin: auto 0 auto 0;
@@ -21,24 +47,16 @@ button {
     transition: color 0.4s linear;  
 }
   
-button:hover {
-    cursor: pointer;
-    background-color: #c9c9c9;
-    color: black; 
-    border: #c9c9c9;  
-}
-
-.p1 {
-    font-weight: bold;
-}
+    button:hover {
+        cursor: pointer;
+        background-color: #c9c9c9;
+        color: black; 
+        border: #c9c9c9;  
+    }
 
 
-.cont {
-    font-size: 10px;
-}
 
 .tag{
-    margin-bottom: 3%;
     font-weight: bold;
 }
 
@@ -50,17 +68,7 @@ button:hover {
     display: none; 
 }
 
-.wrapper {
-    display: flex;
-    margin-top: 13%;
-    gap: 10%;
-    height: 49vh;
-    padding-left: 30px;
-    padding-right: 20px;
-    background-color: var(--main-colour);
-    border-radius: 10px;
-    margin-bottom: 11%;
-}
+
 
 @keyframes float {
 	0% {
@@ -81,24 +89,28 @@ button:hover {
 
 .name h2 {
     font-size: 60px;
-    margin-top: -90px;
     color: #76ABAE;
+    margin: 0;
+}
+
+.name h1{
+    margin: 0;
+    height: 15vh;
 }
 
 .cont p {
     font-size: 20px;
-    margin-top: -30px;
 }
 
 .name {
     font-size: 5.5em;
     font-weight: bold;
-    margin-top: -80px;
 }
 
 .intro{
     color: #b3b3b3;
     padding-left: 10px;
+    margin: 0;
 }
 
 /*MOBILE */

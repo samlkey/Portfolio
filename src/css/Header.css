@@ -1,88 +1,26 @@
 .header {   
-    color: white; 
-    font-weight: bold; 
     display: flex;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 15vh;
     position: fixed;
     z-index: 99;
-}
-
-.header div{
-    width: 47%;
-}
-  
-.title{
-    margin: auto 0 auto 3%;
-}
-
-.context li{
-    display: inline;
-    margin-left: 70px;
-}
-
-.resum {
-    border-radius: 5px;
-    border: 2px solid white;
-    margin: -10px 0 15px 0; 
-}
-
-.header a {
-    color: white;
-}
-
-a {
-	color: #76ABAE;
-  position: relative;
-  text-decoration: none;
-}
-
-a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color: #76ABAE;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
-}
-
-.menu {
-    display: flex;
-    margin: auto 0 auto 0;
-}
-
-.title a{
-    text-decoration: none;
-    font-size: 20px;
+    justify-content: right;
 }
 
 .burger {
     display: flex;
-    margin: auto 0 auto 0;
-    gap: 1vw;
-    justify-content: right;
+    gap: .5vw;
+    padding-right: 3%;
 }
 
-.burger img{
-    width: 60px;
-    height: auto;
-}
+    .burger img{
+        width: 3vw;
+        height: auto;
+    }
 
-.burger img:hover{
-    cursor: pointer;
-}
+    .burger img:hover{
+        cursor: pointer;
+    }
 
 .moon {
     width: 45px !important;

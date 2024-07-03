@@ -5,6 +5,7 @@
     width: 5%;
     height: 100%;
     position: fixed;
+    display: none;
 }
 
 .bar {

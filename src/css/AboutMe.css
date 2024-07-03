@@ -1,6 +1,19 @@
+.aboutMe{
+    height: 100vh;
+}
+
 .aboutMeTitle{
     font-size: 5em;
     margin-left: 11vw;
+    margin-top: 11vh;
+}
+
+.aboutMe-wrapper{
+    display: flex;
+    margin-top: 5%;
+    gap: 10%;
+    width: 80vw;
+    margin: 0 auto 0 auto;
 }
 
 .left-content{
@@ -9,90 +22,29 @@
     height: 60vh;
 }
 
-.left-content p{
-    margin: auto 0 auto 0;
-}
-
-.aboutMe-wrapper{
-    display: flex;
-    margin-top: 5%;
-    gap: 5%;
-}
-
-
-.lang-wrapper{
-    border-radius: 20px;
-    height: 60vh;
-}
-
-.lang-wrapper h2{
-    color: rgba(255, 255, 255, 0.815);
-    margin-top: 2%;
-}
-
 .aboutMe-wrapper div{
     width: 50%;
 }
 
-.lng-container {
+.left-flex{
+    background-color: var(--main-colour);
+}
+
+.lang-wrapper{
+    background-color: var(--main-colour);
+    padding: 1% 1% 1% 1%;
     border-radius: 5%;
-    width: 500px;
-    height: 190px;
-}
-
-.lngIcon {
-    height: 50px;
-    margin-top: 30px;
-}
-
-.iconFlex {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-}
-
-.lang {
-    text-align: center;   
+    width: 50vw;
 }
 
 
-.aboutTitle h2{
-    padding-top: 11px;
-}
-
-.right-of-image{
-    display: flex;
-    gap: 5%;
-}
-
-
-.right-of-image p {
-    margin-left: 16px;
-    font-size: 20px;
-    width: 45%;
-    margin-top: 6%;
-}
-
-.lang-title {
-    font-size: 30px !important;
-}
-
-.lang h1{
-    font-size: 20px;
-}
 .box {
     display: flex;
     background: #ffffff0a;
-    gap: 20%;
+    gap: 10%;
     padding: 1% 5% 1% 2%;
     border-radius: 3%;
     text-align: left;
-    width: 300px !important;
-}
-
-.knownlang{
-    display: flex;
-    gap: 20%;
 }
 
 .box h1 {
@@ -106,13 +58,3 @@
     height: 35px;
     width: auto;  
 }
-
-
-.lang-sub {
-    margin-top: 3%;
-}
-
-.newrow {
-    margin-top: 3%;
-}
-
