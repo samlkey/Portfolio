@@ -1,60 +1,48 @@
 .aboutMe{
     height: 100vh;
+    background-color: #324a5f;
 }
 
 .aboutMeTitle{
     font-size: 5em;
     margin-left: 11vw;
-    margin-top: 11vh;
+    padding-top: 22vh;
+    font-family: LeagueSpartan;
+    margin-bottom: 0;
 }
 
 .aboutMe-wrapper{
     display: flex;
-    margin-top: 5%;
-    gap: 10%;
+    gap: 5%;
     width: 80vw;
     margin: 0 auto 0 auto;
 }
 
+.left-flex{
+    height: 30vh;
+}
+
 .left-content{
     font-size: 2em;
-    margin-left: 25%;
-    height: 60vh;
+    width: 40vw;
+    padding-left: 3%;
+}
+
+.lang-wrapper{
+    padding: 13% 0 0 0;
+}
+
+.lang-wrapper p{
+    font-size: 2em;
+    width: 40vw;
+}
+
+.lang-wrapper h1{
+    font-size: 5em;
+    margin-bottom: 0;
+    font-family: LeagueSpartan;
 }
 
 .aboutMe-wrapper div{
     width: 50%;
-}
-
-.left-flex{
-    background-color: var(--main-colour);
-}
-
-.lang-wrapper{
-    background-color: var(--main-colour);
-    padding: 1% 1% 1% 1%;
-    border-radius: 5%;
-    width: 50vw;
-}
-
-
-.box {
-    display: flex;
-    background: #ffffff0a;
-    gap: 10%;
-    padding: 1% 5% 1% 2%;
-    border-radius: 3%;
-    text-align: left;
-}
-
-.box h1 {
-    margin: auto 0 auto 0;   
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.box img {
-    margin: auto 0 auto 0; 
-    height: 35px;
-    width: auto;  
 }

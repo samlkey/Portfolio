@@ -89,13 +89,15 @@ button {
 
 .name h2 {
     font-size: 60px;
-    color: #76ABAE;
+    color: #ccc9dc;
     margin: 0;
+    font-family: LeagueSpartan;
 }
 
 .name h1{
     margin: 0;
     height: 15vh;
+    font-family: LeagueSpartan;
 }
 
 .cont p {

@@ -1,17 +1,17 @@
 <template>
-    <div class="conTitle">
-        <h1>Send me a message!</h1>
-    </div>
-    <div class="contact">
-        <p>
-        For inquires please contact me below. I am looking forward to hearing from you!
-        </p>
-        <form @submit.prevent="submit" method="POST" target="_blank" action="https://formspree.io/samkey726@gmail.com">
-            <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Your Email"><br><br>
-            <input type="text" id="subject" name="subject" size="45" maxlength="40" placeholder="Subject"><br><br>
-            <textarea rows="10" cols="40" placeholder="Message" maxlength="500" id="msg" name="message"></textarea><br><br>
-            <input type="submit" class="submit" value="Submit">
-        </form> 
+    <div id="contactScroll">
+        <h1 class="conTitle">Send me a message!</h1>
+        <div class="contact">
+            <p>
+            For inquires please contact me below. I am looking forward to hearing from you!
+            </p>
+            <form @submit.prevent="submit" method="POST" target="_blank" action="https://formspree.io/samkey726@gmail.com">
+                <input type="email" id="email" name="from_name" size="45" maxlength="35" placeholder="Your Email"><br><br>
+                <input type="text" id="subject" name="subject" size="45" maxlength="40" placeholder="Subject"><br><br>
+                <textarea rows="10" cols="40" placeholder="Message" maxlength="500" id="msg" name="message"></textarea><br><br>
+                <input type="submit" class="submit" value="Submit">
+            </form> 
+        </div>
     </div>
 </template>
 <script>

@@ -2,14 +2,24 @@
 html, body {
     padding: 0;
     margin: 0;
-    background: #222831;
+    background: var(--main-colour);
     scroll-behavior: smooth; 
     /* overflow: hidden; */
+
+    
+
+    --main-colour: #1b2a41;
+    --second-colour: #0c1821;
 
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+
+@font-face {
+    font-family: LeagueSpartan;
+    src: url(../fonts/LeagueSpartan-Bold.otf);
 }
 
 .content {
@@ -22,8 +32,6 @@ html, body {
 #app {
     font-size: 11px;
     text-align: center;
-    --main-colour: #222831;
-    --second-colour: #76ABAE;
 }
 
 .main {

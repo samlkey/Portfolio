@@ -4,9 +4,8 @@
     <div class="content">
       <Home></Home>
       <AboutMe></AboutMe>
-      <div id="contactScroll">
-        <Contact></Contact>
-      </div>
+      <Languages></Languages>
+      <Contact></Contact>
     </div>
   </div>
   <Footer></Footer>
@@ -20,6 +19,7 @@
   import Contact from './components/Contact.vue';
   import AboutMe from './components/AboutMe.vue';
   import ScrollBar from './components/ScrollBar.vue';
+  import Languages from './components/Languages.vue';
   import { BANNER_CONTENT } from './static/constants'
 
   document.title = "Sam Key's Resume"
@@ -32,7 +32,8 @@
       Home,
       Contact,
       AboutMe,
-      ScrollBar
+      ScrollBar,
+      Languages
     },
     methods: {
       showConsoleBanner : async function(){
