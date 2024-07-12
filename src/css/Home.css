@@ -12,6 +12,7 @@
     align-items: center;
     width: 100vw;
     height: 50vh;
+    gap: 4%;
 }
 
 
@@ -68,8 +69,6 @@ button {
     display: none; 
 }
 
-
-
 @keyframes float {
 	0% {
 		transform: translatey(0px);
@@ -96,7 +95,8 @@ button {
 
 .name h1{
     margin: 0;
-    height: 15vh;
+    margin-top: 15px;
+    font-size: 10vh;
     font-family: LeagueSpartan;
 }
 

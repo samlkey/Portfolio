@@ -5,10 +5,11 @@
       <Home></Home>
       <AboutMe></AboutMe>
       <Languages></Languages>
+      <Projects></Projects>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   </div>
-  <Footer></Footer>
   <ScrollBar></ScrollBar>
 </template>
 
@@ -20,6 +21,7 @@
   import AboutMe from './components/AboutMe.vue';
   import ScrollBar from './components/ScrollBar.vue';
   import Languages from './components/Languages.vue';
+  import Projects from './components/Projects.vue'
   import { BANNER_CONTENT } from './static/constants'
 
   document.title = "Sam Key's Resume"
@@ -33,7 +35,8 @@
       Contact,
       AboutMe,
       ScrollBar,
-      Languages
+      Languages,
+      Projects
     },
     methods: {
       showConsoleBanner : async function(){

@@ -1,27 +1,64 @@
 .footer {
-    display: block;
-    color: white;
-    bottom: 0;
-    width: 10%;
-    height: 160px;
-    position: fixed;
+    height: 100vh;
+    background-color: #324a5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.footerContent{
+    width: 80vw;
+}
+
+.footerTop{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15vh;
+}
+
+.topFlex{
+    display: flex;
+    gap: 25%;
+    font-size: 21px;
+}
+
+.footerTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footerIcons{
+    display: flex;
+    gap: 2%;
+    width: 80vw;
+    padding-top: 3%;
+}
+
+.copyright{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: LeagueSpartan;
+}
+
+.icons{
+    display: flex;
+    justify-content: right;
+    gap: 3%;
+    align-items: center;
+}
+
+.icons div{
+    width: 5% !important;
+}
+
+.footerIcons div{
+    width: 50%;
 }
 
 .icon {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: auto;
     border-radius: 50%;
-    margin-top: 20px;
 }
-
-.footer a :hover {
-    transform: translateY(-3px);
-}
-
-* { box-sizing: border-box; }
-
-
 
 @media only screen and (max-width: 600px) {
     .footer {

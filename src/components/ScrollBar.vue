@@ -10,7 +10,7 @@ export default {
     name: 'ScrollBar',
     mounted() {
         let pageIndex = 0; 
-        let pageTags = ["top", "aboutMe", "languageScroll", "contactScroll"];
+        let pageTags = ["top", "aboutMe", "languageScroll", "projectScroll", "contactScroll", "footerScroll"];
         let pointer = document.querySelector(".pointer");
 
         window.addEventListener("wheel", (e) => {
