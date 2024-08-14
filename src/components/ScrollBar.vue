@@ -2,34 +2,94 @@
     <div class="scrollBar">
         <div class="bar">        
             <div class="pointer"></div>
+            <p>1</p>
         </div>
     </div>
 </template>
 <script>
 export default {
     name: 'ScrollBar',
+    data() {
+        return { 
+            pageIndex: 0,
+            pageTags: ["top", "aboutMe", "languageScroll", "projectScroll", "contactScroll", "footerScroll"],
+            animations: ["slide-in-right", "scale-in-bottom", "scale-in-ver-bottom"],
+            currentTab: null,
+            shouldScroll: true
+        }
+    },
     mounted() {
-        let pageIndex = 0; 
-        let pageTags = ["top", "aboutMe", "languageScroll", "projectScroll", "contactScroll", "footerScroll"];
-        let pointer = document.querySelector(".pointer");
-
         window.addEventListener("wheel", (e) => {
-            if(e.deltaY > 0 && pageIndex < pageTags.length - 1){
+           this.Scroll(e)
+        })
+    },
+    methods: {
+        Scroll(e){
+            if(!this.shouldScroll) return; 
+
+            if(e.deltaY > 0 && this.pageIndex < this.pageTags.length - 1){
                 //go down
-                pageIndex++
-                document.getElementById(pageTags[pageIndex]).scrollIntoView()
-                pointer.style.marginTop = "100px"
+                this.pageIndex++
+                this.currentTab = document.getElementById(this.pageTags[this.pageIndex])
+                this.currentTab.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                //animations
+                this.animations.forEach(e => {
+                    let p = this.currentTab.querySelector("#" + e)
+
+                    if (p != null){
+                        if(!p.classList.contains(e)) this.HandleAnimation(e); 
+                    }
+                })
             }
-            else if(pageIndex != 0)
+            else if(e.deltaY < 0 && this.pageIndex != 0)
             {
                 //go up
-                pageIndex--
-                document.getElementById(pageTags[pageIndex]).scrollIntoView()
+                this.pageIndex--
+                this.currentTab = document.getElementById(this.pageTags[this.pageIndex])
+                this.currentTab.scrollIntoView()
             }
-        })
+            this.shouldScroll = false; 
+
+            setTimeout(() => {
+                this.shouldScroll = true;
+            }, 800)
+        },
+
+
+
+        HandleAnimation(c){
+            let target = document.querySelectorAll("#" + c)
+            let targetDelay = document.querySelectorAll("#" + c + "-delay")
+
+            console.log(target);
+            console.log(targetDelay);
+
+            if(target != null){
+                target.forEach(e => {
+                    e.style.visibility = "hidden";
+                    setTimeout(() => {
+                        e.style.visibility = "visible";
+                        e.classList.add(c); 
+                    }, 400)
+                })
+            }
+     
+            if(targetDelay == null) return;
+
+            targetDelay.forEach(e => {
+                e.style.visibility = "hidden"; 
+
+                setTimeout(() => {
+                    e.style.visibility = "visible";
+                    e.classList.add("scale-in-ver-bottom");
+                }, 800);
+            })
+        }
     }
 }
-
 
 
 

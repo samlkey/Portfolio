@@ -1,7 +1,7 @@
 <template>
     <div class="aboutMe" id="aboutMe">
-        <h1 class="aboutMeTitle">About Me,</h1>
-        <div class="aboutMe-wrapper">
+        <h1 class="aboutMeTitle" id="slide-in-right">About Me,</h1>
+        <div class="aboutMe-wrapper" id="slide-in-right">
             <div class="left-flex">
                 <p class="left-content">
                     Adventurous and determined student with an expanding eagerness and willingness to make a substantial contribution within

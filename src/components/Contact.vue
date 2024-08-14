@@ -1,9 +1,9 @@
 <template>
     <div id="contactScroll">
         <div class="contactContent">
-            <h1 class="conTitle">Send me a message!</h1>
+            <h1 class="conTitle" id="scale-in-bottom">Send me a message!</h1>
             <div class="contact">
-                <p>
+                <p id="scale-in-bottom">
                 For inquires please contact me below. I am looking forward to hearing from you!
                 </p>
 

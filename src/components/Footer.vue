@@ -1,20 +1,20 @@
 <template> 
     <div class="footer" id="footerScroll">
         <div class="footerContent">
-            <div class="footerTop">
+            <div class="footerTop" id="scale-in-ver-bottom-delay">
                 <p class="footerTitle">Get in Contact!</p>
 
                 <div class="topFlex">
                     <p>sam@email.com</p> 
                     <div>
-                        <p>About Me</p>
+                        <a>About Me</a>
                         <p>Experience</p>
                         <p>Projects</p>
                         <p>My Resume</p>
                     </div>
                 </div>
             </div>
-            <div class="footerIcons">
+            <div class="footerIcons" id="scale-in-ver-bottom">
                 <div>
                     <p class="copyright">@ Sam Key 2024</p>
                 </div>
