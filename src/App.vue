@@ -46,7 +46,10 @@
         console.log(ascii + BANNER_CONTENT);
       }
     },
-    mounted(){ this.showConsoleBanner(); }
+    mounted(){ 
+      this.showConsoleBanner(); 
+      window.scrollTo(0, 0);
+    }
   }
 </script>
 <style src="./css/App.css" />

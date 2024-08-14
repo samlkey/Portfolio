@@ -13,7 +13,7 @@ export default {
         return { 
             pageIndex: 0,
             pageTags: ["top", "aboutMe", "languageScroll", "projectScroll", "contactScroll", "footerScroll"],
-            animations: ["slide-in-right", "scale-in-bottom", "scale-in-ver-bottom"],
+            animations: ["slide-in-right", "scale-in-bottom", "scale-in-ver-bottom", "tracking-in-expand"],
             currentTab: null,
             shouldScroll: true
         }
@@ -55,17 +55,11 @@ export default {
 
             setTimeout(() => {
                 this.shouldScroll = true;
-            }, 800)
+            }, 400)
         },
-
-
-
         HandleAnimation(c){
-            let target = document.querySelectorAll("#" + c)
-            let targetDelay = document.querySelectorAll("#" + c + "-delay")
-
-            console.log(target);
-            console.log(targetDelay);
+            let target = this.currentTab.querySelectorAll("#" + c)
+            let targetDelay = this.currentTab.querySelectorAll("#" + c + "-delay")
 
             if(target != null){
                 target.forEach(e => {

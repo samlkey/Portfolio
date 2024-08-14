@@ -1,5 +1,7 @@
 <template>
-    <div id="languageScroll"></div>
+    <div id="languageScroll">
+
+    </div>
 </template>
 <script>
 export default{

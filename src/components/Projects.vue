@@ -1,20 +1,30 @@
 <template>
     <div id="projectScroll">
+        <div class="projWrapper">
+            <div class="projContent">
+                <div class="projLeft">
+                    <div class="projLeftContent">
+                        <h1 id="scale-in-ver-bottom">View my Projects,</h1>
+                        <p id="scale-in-ver-bottom">
+                            Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.
+                            Blah. Blah. Blah.
+                        </p>
+                        <button>Hi!</button>
+                    </div>
+                </div>
+                <div class="projRight">
+                    <div class="projRightContent">
+                        <h1 id="scale-in-ver-bottom">View my Projects,</h1>
+                        <p id="scale-in-ver-bottom">
+                            Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.Blah. Blah. Blah.
+                            Blah. Blah. Blah.
+                        </p>
+                        <button>Hi!</button>
+                    </div>
+                </div>
+            </div>
 
-
-        <h1 class="title">Projects!</h1>
-        <div class="vueport">
-            <h1>Vue.js Portfolio</h1>
-            <a href="https://github.com/samlkey/Portfolio" class="link">View GitHub Repository</a>
         </div>
-        
-        <p>desc of port</p>
-    
-    
-    
-    
-        <p>snapchat backup</p>
-
     </div>
 
 
