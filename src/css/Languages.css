@@ -3,4 +3,34 @@
     background-color: var(--main-colour);
 }
 
+.mainlang-wrapper{
+    display: flex; 
+    width: 100%; 
+    height: inherit;
+    gap: 3%;
+    align-items: center;
+    justify-content: center;
+}
 
+.lang-left{
+    width: 30%;
+    height: 80%;
+    /* background-color: #1e2f48; */
+}
+
+.lang-left p{
+    font-size: 20px;
+}
+
+.lang-right{
+    width: 50%;
+    height: 80%;
+    /* background-color: #1e2f48; */
+    background-image: url("../assets/sk.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.lang-left-title{
+    font-size: 6vh;
+}
