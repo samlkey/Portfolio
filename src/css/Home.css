@@ -1,28 +1,43 @@
-.home-main{
-    height: 100vh;
-    display: flex; 
+.home{
+    height: 81vh; 
     justify-content: center; 
     align-items: center; 
 }
 
-.wrap-home {
+.home-backdrop {
     display: flex;
     background-color: var(--main-colour);
     justify-content: center; 
     align-items: center;
-    width: 100vw;
-    height: 50vh;
-    gap: 4%;
+    height: 25rem;
 }
 
-
-.cont {
-    font-size: 10px;
-    width: 40vw;
+.home-backdrop-content {
+    width: 45rem;
 }
 
-.emoji{
-    width: 20vw;
+.home-backdrop-content-intro{
+    color: #b3b3b3;
+    padding-left: 3px;
+    margin: 0;
+}
+
+.home-backdrop-content-intro-name h1{
+    margin: 0;
+    margin-top: 15px;
+    font-size: 9vh;
+    font-family: LeagueSpartan;
+}
+
+.home-backdrop-content-intro-name h2 {
+    font-size: 2rem;
+    color: #ccc9dc;
+    margin: 0;
+    font-family: LeagueSpartan;
+}
+
+.home-backdrop-emoji{
+    width: 20rem;
     height: auto;
 }
 
@@ -37,7 +52,10 @@ button {
     border: 0;
     font-size: 20px;
     margin: auto 0 auto 0;
-    
+
+
+
+
     -webkit-transition: background-color 0.4s linear;
     -moz-transition: background-color 0.4s linear;
     -o-transition: background-color 0.4s linear;
@@ -56,16 +74,7 @@ button {
     }
 
 
-
-.tag{
-    font-weight: bold;
-}
-
-.arrow {
-    width: 50px;
-    height: 40px;
-    margin: 0 auto 0 auto;
-    animation: float 2s ease-in-out infinite;
+.home-arrow {
     display: none; 
 }
 
@@ -86,86 +95,27 @@ button {
     transform: translateY(3px);
 }
 
-.name h2 {
-    font-size: 60px;
-    color: #ccc9dc;
-    margin: 0;
-    font-family: LeagueSpartan;
-}
 
-.name h1{
-    margin: 0;
-    margin-top: 15px;
-    font-size: 10vh;
-    font-family: LeagueSpartan;
-}
 
-.cont p {
-    font-size: 20px;
-}
-
-.name {
-    font-size: 5.5em;
-    font-weight: bold;
-}
-
-.intro{
-    color: #b3b3b3;
-    padding-left: 10px;
-    margin: 0;
-}
 
 /*MOBILE */
 @media only screen and (max-width: 600px) {
-    .cont {
-        margin-left: 3%;
-        width: 100vw !important;
-        margin: 0;
-    }
 
-    .wrapper {
-        margin-top: 10vh !important;
-    }
-
-    .name h1 {
-        font-size: 70px;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
-    .name h2 {
-        font-size: 27px;
-        padding-bottom: 2%;
-    }
-
-    .tag {
-        font-size: 100px;
-        padding-top: 4%;
-    }
-
-    .arrow{
-        margin: 28vh auto 100px auto !important;
-        display: block;
-    }
-
-    .intro{
-        padding: 0;
-    }
-    
-    .arrow-wrap{
+    .home-backdrop-content-intro-name{
         text-align: center;
     }
 
-
-    .wrapper{
-        height: 100%;
+    .home-backdrop-content-intro-name h1{
+        font-size: 6.5vh;
     }
 
-    .tag{
+    .home-backdrop-emoji{
         display: none;
     }
 
-    .cube {
-        display: none;
+    .home-arrow{
+        display: block;
+        animation: float 2s ease-in-out infinite;
+        width: 5rem;
     }
 }

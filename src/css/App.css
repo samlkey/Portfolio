@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     background: var(--main-colour);
     scroll-behavior: smooth; 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     
 

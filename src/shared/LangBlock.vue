@@ -1,9 +1,7 @@
 <template>
-    <div class="knownlang">
-        <div class="box">
-            <img class="lngIcon" :src="url" />
-            <h1>{{ language }}</h1>
-        </div>
+    <div class="box">
+        <img class="lngIcon" :src="url" />
+        <h1>{{ language }}</h1>
     </div>
 </template>
 

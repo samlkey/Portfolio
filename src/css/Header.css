@@ -2,42 +2,28 @@
     display: flex;
     width: 100%;
     height: 15vh;
-    position: fixed;
     z-index: 99;
     justify-content: right;
 }
 
-.burger {
+.header-icons {
     display: flex;
     gap: .5vw;
     padding-right: 3%;
 }
 
-    .burger img{
-        width: 3vw;
-        height: auto;
-    }
-
-    .burger img:hover{
+    .header-icons img:hover{
         cursor: pointer;
     }
 
-.moon {
-    width: 45px !important;
-    height: auto !important;
+.header-icons-moon {
+    width: 2.5rem ;
+    height: auto;
 }
 
-/*MOBILE */
-@media only screen and (max-width: 600px) {
-    .header {
-        gap: 30vw;
-    }
-    
-    .menu {
-        display: none;
-    }
 
-    .big {
-        margin-left: 0;
-    }
+.header-icons-burger{
+    width: 3rem;
+    height: auto;
 }
+

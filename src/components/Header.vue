@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <div class="burger">
-      <img class="moon" src="../assets/moon.svg">
-      <img src="../assets/burger.svg">
+    <div class="header-icons">
+      <img class="header-icons-moon" src="../assets/moon.svg">
+      <img class="header-icons-burger" src="../assets/burger.svg">
     </div>
   </div>
 </template>

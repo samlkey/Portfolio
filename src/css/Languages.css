@@ -26,9 +26,12 @@
     width: 50%;
     height: 80%;
     /* background-color: #1e2f48; */
-    background-image: url("../assets/sk.png");
-    background-repeat: no-repeat;
-    background-position: center; 
+}
+
+.lang-right div{
+    display: flex;
+    gap: 5%;
+    margin-top: 1%;
 }
 
 .lang-left-title{
